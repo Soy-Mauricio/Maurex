@@ -32,27 +32,30 @@ const Home: React.FC = () => {
             <h2 className='text-3xl text-stone-800 opacity-90 font-bold flex justify-center text-center'>Meet the AI Writing Assistant for Your Newsletter</h2>
           </div>
 
-          <div className='mt-8'>
-            {/* Utilizamos el componente ServiceBlock con props */}
-            <ServiceBlock
-              icon="/public/Icons/rayo-ovni.png"
-              title="GET CONTENT SUGGESTIONS"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
-            />
-            <ServiceBlock
-              icon="/public/Icons/rayo-ovni.png"
-              title="GET CONTENT SUGGESTIONS"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
-            />
-            <ServiceBlock
-              icon="/public/Icons/rayo-ovni.png"
-              title="GET CONTENT SUGGESTIONS"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
-            />
+          <div className='mt-8 sm:flex h-auto sm:items-center sm:justify-between sm:flex-row-reverse'>
 
-            <div>
-              <ImagenesBlocks/>
+          <ImagenesBlocks/>
+
+            {/* Utilizamos el componente ServiceBlock con props */}
+            <div className='sm:flex-col sm:w-[50%] sm:mr-10'>
+              <ServiceBlock
+                icon="/public/Icons/rayo-ovni.png"
+                title="GET CONTENT SUGGESTIONS"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
+                isFirst={true} // Indicamos que este es el primer bloque
+              />
+              <ServiceBlock
+                icon="/public/Icons/rayo-ovni.png"
+                title="GET CONTENT SUGGESTIONS"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
+              />
+              <ServiceBlock
+                icon="/public/Icons/rayo-ovni.png"
+                title="GET CONTENT SUGGESTIONS"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
+              />
             </div>
+
           </div>
 
         </div>
