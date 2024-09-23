@@ -7,7 +7,7 @@ interface ServiceBlockProps {
     isFirst?: boolean; // Nueva propiedad opcional para identificar si es el primero
 }
 
-const ServiceBlock: React.FC<ServiceBlockProps> = ({ icon, title, description, isFirst }) => {
+const ServiceBlocks: React.FC<ServiceBlockProps> = ({ icon, title, description, isFirst }) => {
     return (
         <div className={`mt-5 ${isFirst ? 'sm:mt-0' : ''}`}>
           <div className='font-bold text-stone-800 opacity-90 flex items-center'>
@@ -21,4 +21,4 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ icon, title, description, i
     );
 }
 
-export default ServiceBlock;
+export default ServiceBlocks;

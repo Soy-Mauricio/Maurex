@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../layout/Header';
-import ServiceBlock from '../blocks/ServiceBlocks';
+import ServiceBlocks from '../blocks/ServiceBlocks';
 import ImagenesBlocks from '../blocks/ImagenesBlocks';
+import OurServices from '../blocks/OurServices';
 
 
 const Home: React.FC = () => {
@@ -26,6 +27,35 @@ const Home: React.FC = () => {
             </div>
         </div>
 
+        {/* Contenido de Nuestros Servicios */}
+        <div className='h-[auto] mt-10 p-4'>
+          <div className="">
+            <h1 className="text-3xl text-stone-800 opacity-90 font-bold flex justify-center text-center">Nuestros Sevicios Incluyen</h1>
+          </div>
+
+          <OurServices
+            number={1}
+            icon="/public/Icons/rayo-ovni.png"
+            title='Desarrollo Personalizado de Apps Web y Móviles'
+            description="Creamos aplicaciones a medida, adaptadas a tus necesidades, para impulsar tu negocio en el entorno digital."
+          />
+
+          <OurServices
+            number={2}
+            icon="/public/Icons/rayo-ovni.png"
+            title='Optimización Tecnológica de Procesos'
+            description="Optimización de procesos con soluciones tecnológicas."
+          />
+
+          <OurServices
+            number={3}
+            icon="/public/Icons/rayo-ovni.png"
+            title='Consultoría en Eficiencia Empresarial'
+            description="Ofrecemos asesoría especializada para optimizar recursos y mejorar el rendimiento de tu empresa."
+          />
+
+        </div>
+
         {/* Contenido sobre nuestro trabajo */}
         <div className='h-[auto] mt-10 p-4'>
           <div className='h-[auto]'>
@@ -38,18 +68,18 @@ const Home: React.FC = () => {
 
             {/* Utilizamos el componente ServiceBlock con props */}
             <div className='sm:flex-col sm:w-[50%] sm:mr-10'>
-              <ServiceBlock
+              <ServiceBlocks
                 icon="/public/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
                 isFirst={true} // Indicamos que este es el primer bloque
               />
-              <ServiceBlock
+              <ServiceBlocks
                 icon="/public/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
               />
-              <ServiceBlock
+              <ServiceBlocks
                 icon="/public/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."

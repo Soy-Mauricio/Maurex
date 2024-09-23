@@ -17,7 +17,7 @@ const ImagenesBlocks: React.FC = () => {
 
     // Limpia el intervalo cuando el componente se desmonte
     return () => clearInterval(interval);
-  }, []);
+  }, [imagenes.length]);
 
   return (
     <div className='sm:w-[50%] h-[50vh] mt-5 sm:mt-0'>
