@@ -35,21 +35,21 @@ const Home: React.FC = () => {
 
           <OurServices
             number={1}
-            icon="/public/Icons/rayo-ovni.png"
+            img="/Img/PaisajeUno.jpg"
             title='Desarrollo Personalizado de Apps Web y Móviles'
             description="Creamos aplicaciones a medida, adaptadas a tus necesidades, para impulsar tu negocio en el entorno digital."
           />
 
           <OurServices
             number={2}
-            icon="/public/Icons/rayo-ovni.png"
+            img="/Icons/rayo-ovni.png"
             title='Optimización Tecnológica de Procesos'
             description="Optimización de procesos con soluciones tecnológicas."
           />
 
           <OurServices
             number={3}
-            icon="/public/Icons/rayo-ovni.png"
+            img="/Icons/rayo-ovni.png"
             title='Consultoría en Eficiencia Empresarial'
             description="Ofrecemos asesoría especializada para optimizar recursos y mejorar el rendimiento de tu empresa."
           />
@@ -69,18 +69,18 @@ const Home: React.FC = () => {
             {/* Utilizamos el componente ServiceBlock con props */}
             <div className='sm:flex-col sm:w-[50%] sm:mr-10'>
               <ServiceBlocks
-                icon="/public/Icons/rayo-ovni.png"
+                icon="/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
                 isFirst={true} // Indicamos que este es el primer bloque
               />
               <ServiceBlocks
-                icon="/public/Icons/rayo-ovni.png"
+                icon="/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
               />
               <ServiceBlocks
-                icon="/public/Icons/rayo-ovni.png"
+                icon="/Icons/rayo-ovni.png"
                 title="GET CONTENT SUGGESTIONS"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quae quas perspiciatis."
               />

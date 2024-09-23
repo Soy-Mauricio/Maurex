@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import BiciUno from '/Proyecto Mauro/Maurex/public/Img/BiciUno.jpg';
-import BiciDos from '/Proyecto Mauro/Maurex/public/Img/BiciDos.jpg';
-import BiciTres from '/Proyecto Mauro/Maurex/public/Img/BiciTres.jpg';
+import BiciUno from '/Img/BiciUno.jpg';
+import BiciDos from '/Img/BiciDos.jpg';
+import BiciTres from '/Img/BiciTres.jpg';
 
 const ImagenesBlocks: React.FC = () => {
 
