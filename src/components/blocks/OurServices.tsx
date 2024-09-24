@@ -10,9 +10,9 @@ interface OurServicesProps {
 const OurServices: React.FC<OurServicesProps> = ({ img, title, description, number }) => {
   return (
     <div className='mt-10'>
-      <ul className='pl-10 border-[1px] border-stone-300'>
-        <li className='flex relative items-start'>
-          <div className='rounded-full border-[1px] border-stone-200 h-[25px] w-[25px] flex items-center justify-center absolute left-[-40px] transform -translate-x-1/2 font-bold'>
+      <ul className=''>
+        <li className='flex'>
+          <div className='rounded-full border-[1px] border-stone-500 p-2 h-[25px] w-[25px] flex items-center justify-center mr-2 font-semibold text-stone-800 opacity-90'>
             {number}
           </div>
           <div className=''>

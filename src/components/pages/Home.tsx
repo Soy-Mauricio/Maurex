@@ -34,24 +34,23 @@ const Home: React.FC = () => {
           </div>
 
           <OurServices
-            number={1}
             img="/Img/PaisajeUno.jpg"
             title='Desarrollo Personalizado de Apps Web y Móviles'
             description="Creamos aplicaciones a medida, adaptadas a tus necesidades, para impulsar tu negocio en el entorno digital."
+            number={1}
           />
 
           <OurServices
-            number={2}
-            img="/Icons/rayo-ovni.png"
+            img="/Img/PaisajeDos.jpg"
             title='Optimización Tecnológica de Procesos'
             description="Optimización de procesos con soluciones tecnológicas."
-          />
+            number={2}          />
 
           <OurServices
-            number={3}
-            img="/Icons/rayo-ovni.png"
+            img="/Img/PaisajeTres.jpg"
             title='Consultoría en Eficiencia Empresarial'
             description="Ofrecemos asesoría especializada para optimizar recursos y mejorar el rendimiento de tu empresa."
+            number={3}
           />
 
         </div>
