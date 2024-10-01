@@ -19,7 +19,7 @@ const OurServices: React.FC<OurServicesProps> = ({ img, title, description, numb
             <div className="flex-col items-center">
               <div>
                 <h1 className='font-bold text-stone-800 opacity-90'>{title}</h1>
-                <h3>{description}</h3>
+                <h3 className='font-medium opacity-65'>{description}</h3>
               </div>
               <div className='mt-5'>
                 <img className='h-full w-full object-cover' src={img} alt="" />
