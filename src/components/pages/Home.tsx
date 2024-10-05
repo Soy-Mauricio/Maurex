@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 import ServiceBlocks from '../blocks/ServiceBlocks';
 import OurServices from '../blocks/OurServices';
 import Reviews from '../blocks/Reviews';
+import Company, { Equipo } from '../blocks/Company';
 
 
 const Home: React.FC = () => {
@@ -37,27 +39,27 @@ const Home: React.FC = () => {
 
           <OurServices
             img="/Img/PaisajeUno.jpg"
-            title='Desarrollo Web'
+            title="Desarrollo Web"
             description="Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea."
             number={1}
           />
 
           <OurServices
             img="/Img/PaisajeDos.jpg"
-            title='Aplicaciones Móviles'
+            title="Aplicaciones Móviles"
             description="Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén."
             number={2}          />
 
           <OurServices
             img="/Img/PaisajeTres.jpg"
-            title='Software a Medida'
+            title="Software a Medida"
             description="Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos."
             number={3}
           />
 
           <OurServices
             img="/Img/PaisajeTres.jpg"
-            title='Consultoría Tecnológica'
+            title="Consultoría Tecnológica"
             description="Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa."
             number={4}
           />
@@ -130,28 +132,62 @@ const Home: React.FC = () => {
           {/* Contenido Nosotros Maurex */}
           <div className='h-[auto] mt-14 p-4'>
             <div className=''>
-              <div className=''>
-                <h2 className='text-3xl text-stone-800 opacity-90 font-bold '>Conoce Maurex</h2>
-                <p className='mt-4'>Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
-              </div>
-
-              <div className='mt-4'>
-                <h2 className='font-bold text-stone-800 opacity-90'>Misión:</h2>
-                <p>Transformar ideas en soluciones tecnológicas mediante el uso de las herramientas más avanzadas, creando software a medida que impulse el crecimiento y la eficiencia de nuestros clientes.</p>
-              </div>
-
-              <div className='mt-4'>
-                <h2 className='font-bold text-stone-800 opacity-90'>Visión:</h2>
-                <p>Ser referentes en la industria del desarrollo de software por nuestra calidad, compromiso y capacidad de adaptación a las nuevas tecnologías.</p>
-              </div>
+              <h2 className='text-3xl text-stone-800 opacity-90 font-bold'>Conoce Maurex</h2>
+              <p className='mt-4'>Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
             </div>
+
+            <Company 
+              tittle="Misión"
+              description="Transformar ideas en soluciones tecnológicas mediante el uso de las herramientas más avanzadas, creando software a medida que impulse el crecimiento y la eficiencia de nuestros clientes."
+            />
+            <Company 
+              tittle="Visión"
+              description="Ser referentes en la industria del desarrollo de software por nuestra calidad, compromiso y capacidad de adaptación a las nuevas tecnologías."
+            />
           </div>
       </section>
 
       <section>
           {/* Contenido Nuestro Equipo */}
-          <div></div>
+          <div className='h-[auto] p-4'>
+            <Equipo 
+              tittle="Nuestro Equipo"
+              description="En Maurex, somos un equipo ágil y altamente especializado. Nos enfocamos en ofrecer soluciones completas, combinando el poder del frontend y backend para crear productos robustos y escalables."
+              img="/public/Img/PaisajeUno.jpg"
+              name="Mauricio Sanabria"
+              cargo="Desarrollador Frontend"
+              conocimientos="Especialista en interfaces intuitivas y herramientas como React, JavaScript, Axios y Tailwind CSS."
+            />
+
+            <Equipo 
+              tittle=""
+              description=""
+              img="/public/Img/PaisajeUno.jpg"
+              name="Mauricio Sanabria"
+              cargo="Desarrollador Frontend"
+              conocimientos="Especialista en interfaces intuitivas y herramientas como React, JavaScript, Axios y Tailwind CSS."
+            />
+          </div>
       </section>
+
+      <section>
+        <div className='h-[auto] mt-14 p-4 text-white bg-indigo-600'>
+            <div className=''>
+              <h2 className='text-3xl font-bold text-center'>¿Listo para transformar tu negocio?</h2>
+              <p className='mt-4'>Contáctanos para comenzar a desarrollar la solución perfecta para ti.</p>
+            </div>
+
+            <div className='mt-4'>
+              <button className='flex items-center justify-center w-[auto] bg-yellow-500 rounded-3xl'>
+                <a className='font-semibold p-2'>
+                  Solicita una consulta
+                  <img className='w-[14px] inline-block ml-1' src="/public/Icons/angulo-derecho.png" alt="" /></a> 
+              </button>
+            </div>
+        </div>
+      </section>
+
+      <Footer/>
 
     </>
   );
