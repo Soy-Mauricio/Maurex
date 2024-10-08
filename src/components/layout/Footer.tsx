@@ -3,22 +3,72 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className='relative w-full'>
-      {/* Contenedor grid que tiene 2 columnas en pantallas pequeñas y 4 en pantallas grandes */}
-      <div className='grid grid-cols-2 md:grid-cols-4 mt-14 gap-4 p-4 justify-center mx-auto'>
+
+      <div className='grid mt-14 gap-4 p-4 '>
         {/* Columnas individuales */}
         <div>
-          <div>Columna 1</div>
+          <h2 className='font-bold text-stone-800 opacity-90'>TECNOLOGÍAS</h2>
+          <div><img src="" alt="" /></div>
         </div>
+
+        <div className='mt-4'>
+          <h2 className='font-bold text-stone-800 opacity-90'>CONTACTANOS</h2>
+          <ul className='text-stone-800 opacity-50'>
+            <li className='mt-4'>
+              <a className='font-medium' href="">+57 3227863768</a>
+              <p className='text-xs'>Celular</p>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">maurex@gmail.com</a>
+              <p className='text-xs'>Correo</p>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Villavicencio - Colombia</a>
+              <p className='text-xs'>Dirección</p>
+            </li>
+          </ul>
+        </div>
+
+        <div className='mt-4'>
+          <h2 className='font-bold text-stone-800 opacity-90'>MAUREX</h2>
+          <ul className='text-stone-800 opacity-50'>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Sobre Nosotros</a>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Nuestro Equipo</a>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Proyectos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className='mt-4'>
+          <h2 className='font-bold text-stone-800 opacity-90'>Redes Sociales</h2>
+          <ul className='text-stone-800 opacity-50'>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Instagram</a>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Twitter</a>
+            </li>
+            <li className='mt-4'>
+              <a className='font-medium' href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
         <div>
-          <div>Columna 2</div>
+          <p className='text-center'>
+            © 2024 MAUREX DERECHOS RESERVADOS.
+          </p>
         </div>
-        <div>
-          <div>Columna 3</div>
-        </div>
-        <div>
-          <div>Columna 4</div>
-        </div>
+
       </div>
+
     </footer>
   );
 };
