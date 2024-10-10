@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-full">
-      <div className="container mx-auto flex justify-between items-center relative">
+    <nav className="max-w-[1200px] w-full mx-auto">
+      <div className="flex justify-between items-center relative sm:mx-8">
         {/* Logo */}
         <div className="text-white text-2xl font-bold cursor-pointer">
           <a href="">MAUREX</a>

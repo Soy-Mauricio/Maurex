@@ -12,21 +12,28 @@ const Home: React.FC = () => {
     <>
       <Header/>
 
-      <section className='h-[auto]'>
+      <section className='h-[auto] bg-indigo-600'>
         {/* Contenido de Bienvenida */}
-        <div className='text-white bg-indigo-600 h-[auto]'>
-            <div className='h-[auto] p-4 '>
-              <h1 className='text-4xl font-bold flex justify-center mt-4'>¡Bienvenidos a Maurex!</h1>
-              <p className='mt-4 opacity-90 font-medium'>En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
+        <div className='text-white container max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
+            <div className='h-[auto] p-4 sm:mx-8 sm:w-[50%]'>
+              <div className=''>
+                <h1 className='sm:text-5xl font-bold  mt-4'>¡Bienvenidos a Maurex!</h1>
+                <p className='mt-4 sm:text-2xl opacity-90 font-medium '>En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
+              </div>
+
+              <div className='mt-4'>
+                <button className='flex items-center justify-center w-[auto] bg-yellow-500 rounded-3xl'>
+                  <a className='p-2 font-semibold'>
+                    Empezar ahora
+                    <img className='w-[14px] inline-block ml-1' src="/public/Icons/angulo-derecho.png" alt="" /></a> 
+                </button>
+              </div>
             </div>
 
-            <div className='p-4'>
-              <button className='flex items-center justify-center w-[auto] bg-yellow-500 rounded-3xl'>
-                <a className='p-2 font-semibold'>
-                  Empezar ahora
-                  <img className='w-[14px] inline-block ml-1' src="/public/Icons/angulo-derecho.png" alt="" /></a> 
-              </button>
-            </div>
+          <div className='w-[50%] sm:flex hidden '>
+            <img className='' src="/public/Img/IlustracionDeveloper.png" alt="" />
+          </div>
+          
         </div>
       </section>
 
