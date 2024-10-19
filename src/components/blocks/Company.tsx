@@ -1,10 +1,4 @@
 import React from 'react';
-
-interface CompanyProps {
-    tittle: string;
-    description: string;
-}
-
 interface EquipoProps {
     tittle: string;
     description: string;
@@ -12,17 +6,6 @@ interface EquipoProps {
     cargo: string;
     img: string;
     conocimientos: string;
-}
-
-const Company: React.FC<CompanyProps> = ({ tittle, description }) => {
-    return (
-        <div className=''>
-            <div className='mt-4'>
-                <h2 className='font-bold text-stone-800 opacity-90'>{tittle}</h2>
-                <p>{description}</p>
-            </div>
-        </div>
-    );
 }
 
 const Equipo: React.FC<EquipoProps> = ({ tittle, description, name, cargo, img, conocimientos }) => {
@@ -54,6 +37,4 @@ const Equipo: React.FC<EquipoProps> = ({ tittle, description, name, cargo, img, 
     );
 }
 
-
-export default Company;
-export {Equipo}
+export default Equipo;

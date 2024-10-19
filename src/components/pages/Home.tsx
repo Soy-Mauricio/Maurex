@@ -3,8 +3,7 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import ServiceBlocks from '../blocks/ServiceBlocks';
 import OurServices from '../blocks/OurServices';
-import Reviews from '../blocks/Reviews';
-import Company, { Equipo } from '../blocks/Company';
+import Equipo from '../blocks/Company';
 
 
 const Home: React.FC = () => {
@@ -17,15 +16,15 @@ const Home: React.FC = () => {
         <div className='text-white container max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
             <div className='h-[auto] p-4 sm:mx-8 sm:w-[50%]'>
               <div className=''>
-                <h1 className='sm:text-5xl font-bold  mt-4'>¡Bienvenidos a Maurex!</h1>
-                <p className='mt-4 sm:text-2xl opacity-90 font-medium '>En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
+                <h1 className='sm:text-5xl font-bold mt-4'>Tu aliado en el desarrollo de software</h1>
+                <p className='mt-4 sm:text-2xl font-medium '>En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
               </div>
 
               <div className='mt-4'>
-                <button className='flex items-center justify-center w-[auto] bg-yellow-500 rounded-3xl'>
-                  <a className='p-2 font-semibold'>
+                <button className='rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[auto] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300'>
+                  <a className='p-2 font-semibold text-lg'>
                     Empezar ahora
-                    <img className='w-[14px] inline-block ml-1' src="/public/Icons/angulo-derecho.png" alt="" /></a> 
+                    <img className='w-[24px] inline-block' src="/public/Icons/angulo-pequeno-derecha.png" alt="" /></a> 
                 </button>
               </div>
             </div>
@@ -37,11 +36,11 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className='h-[auto]'>
+      <section className='h-[auto] mt-14'>
         {/* Contenido de Nuestros Servicios */}
-        <div className='h-[auto] mt-14 p-4'>
+        <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
           <div className=''>
-            <h1 className='text-3xl text-stone-800 opacity-90 font-bold flex justify-center text-center'>Nuestros Sevicios Incluyen</h1>
+            <h1 className='text-3xl opacity-80 font-bold flex justify-center text-center'>Nuestros Sevicios Incluyen</h1>
           </div>
 
           <OurServices
@@ -73,84 +72,45 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className='h-[auto] bg-indigo-600'>
+      <section className='h-[auto] mt-14 bg-indigo-600'>
         {/* Contenido sobre nuestros proyectos */}
-        <div className='h-[auto] mt-14 p-4'>
-          <div className=''>
-            <h2 className='text-3xl text-stone-800 opacity-90 font-bold flex justify-center text-center'>Nuestros Proyectos</h2>
-            <p className='text-center mt-2 font-medium opacity-65'>Cada proyecto es un reto que nos impulsa a seguir innovando. Aquí te presentamos algunos de nuestros trabajos más destacados.</p>
+        <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
+          <div className='h-[auto] mt-14 '>
+            <h2 className='text-3xl mt-4 font-bold flex justify-center text-center text-white'>Proyectos Destacados</h2>
+            <div className=' flex justify-center items-center'>
+              <p className='text-center mt-4 sm:w-[75%] text-2xl  text-white'>En Maurex, cada proyecto es un reto y una oportunidad de innovar. Aquí te presentamos algunos de nuestros trabajos más destacados.</p>
+            </div>
           </div>
-
-          <div className='mt-10 sm:flex h-auto sm:items-center sm:justify-between sm:flex-row-reverse'>
 
             {/* Utilizamos el componente ServiceBlock con props */}
-            <div className='sm:flex-col sm:w-[50%] sm:mr-10'>
+            <div className='sm:flex-col mt-16 mb-16'>
               <ServiceBlocks
-                icon="/Icons/rayo-ovni.png"
-                title="VUELOYA WEB"
-                description="Desarrollo de una plataforma e-commerce que aumentó en un 50% las ventas online de nuestro cliente."
+                icon="/Icons/controlar.png"
+                title="VueloYA"
+                description="VueloYA es una aplicación de compra de tiquetes aéreos diseñada y desarrollada por Maurex para facilitar el proceso de búsqueda y reserva de vuelos nacionales e internacionales. El objetivo principal era crear una solución accesible y eficiente para los usuarios, permitiendo una experiencia de reserva rápida, sin fricciones y con opciones de filtrado personalizadas."
                 isFirst={true} // Indicamos que este es el primer bloque
               />
+
               <ServiceBlocks
-                icon="/Icons/rayo-ovni.png"
-                title="VUELOYA APP"
-                description="Aplicación móvil de reserva de servicios con más de 100.000 descargas."
+                icon="/Icons/controlar.png"
+                title="Plastisol"
+                description="Plastisol es una plataforma de comercio electrónico desarrollada por Maurex para la venta de productos plásticos, con un enfoque en ofrecer una experiencia de compra fluida y accesible para sus clientes. El objetivo principal del proyecto era crear una tienda online que permitiera a los usuarios explorar y adquirir una amplia gama de productos plásticos de forma rápida y sencilla, con opciones avanzadas de filtrado y un proceso de compra optimizado."
               />
             </div>
-
-          </div>
-
-          <div className='mt-4 w-[50%]'>
-            <a href="#" className='flex items-center cursor-pointer'>
-              <span className='btn-proyectos sm:mt-4 mt-0 text-stone-800 flex items-center font-semibold border-b-2 border-b-stone-800 hover:bg-stone-800 hover:text-white hover:p-1'>
-                PROYECTOS
-                <img className='w-[16px] ml-2' src="/public/Icons/flecha-derecha.png" alt="Flecha" />
-              </span>
-            </a>
-          </div>
-
         </div>
       </section>
 
-      <section className='h-[auto]'>
-        {/* Contenido reseñas de los clientes */}
-        <div className='h-[auto] mt-14 p-4'>
-          <div className=''>
-            <h2 className='text-3xl text-stone-800 opacity-90 font-bold flex justify-center text-center'>Nuestros Clientes</h2>
-          </div>
-          
-          <div className='mt-10'>
-            <Reviews
-              img="/public/Img/PaisajeUno.jpg"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum, perspiciatis eligendi quae reiciendis distinctio voluptate, natus reprehenderit excepturi blanditiis consequuntur inventore nisi accusamus omnis minus deleniti tempore temporibus rem."
-              isFirst={true} // Indicamos que este es el primer bloque
-            />
-
-            <Reviews
-              img="/public/Img/PaisajeUno.jpg"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum, perspiciatis eligendi quae reiciendis distinctio voluptate, natus reprehenderit excepturi blanditiis consequuntur inventore nisi accusamus omnis minus deleniti tempore temporibus rem."
-            />
-          </div>
-
-        </div>
-      </section>
-
-      <section>
+      <section className='h-[auto] mt-14 '>
           {/* Contenido Nosotros Maurex */}
-          <div className='h-[auto] mt-14 p-4'>
-            <div className=''>
-              <h2 className='text-3xl text-stone-800 opacity-90 font-bold'>Conoce Maurex</h2>
-              <p className='mt-4'>Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
+          <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
+            <div className='flex justify-center'>
+              <div className='sm:w-[75%]'>
+                <h2 className='text-center text-3xl opacity-80 font-bold'>Maurex</h2>
+                <p className='mt-4 text-center text-2xl opacity-80'>Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
+              </div>
             </div>
 
-            <Company 
-              tittle="Misión"
-              description="Transformar ideas en soluciones tecnológicas mediante el uso de las herramientas más avanzadas, creando software a medida que impulse el crecimiento y la eficiencia de nuestros clientes."
-            />
-            <Company 
-              tittle="Visión"
-              description="Ser referentes en la industria del desarrollo de software por nuestra calidad, compromiso y capacidad de adaptación a las nuevas tecnologías."
-            />
+
           </div>
       </section>
 

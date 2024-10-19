@@ -20,9 +20,9 @@ const ImagenesBlocks: React.FC = () => {
   }, [imagenes.length]);
 
   return (
-    <div className='sm:w-[50%] h-[50vh] mt-5 sm:mt-0'>
-      <img className='h-full w-full object-cover rounded' src={imagenes[currentImageIndex]} alt="" />
-    </div>
+    <>
+      <img className='h-full w-full object-cover object-center rounded' src={imagenes[currentImageIndex]} alt="" />
+    </>
   )
 }
 
