@@ -2,3 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+
+.btn-proyectos:hover img{
+    filter: invert(1); /* Invertir el color del icono en el hover */
+}

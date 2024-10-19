@@ -8,21 +8,24 @@ interface OurServicesProps {
 }
 
 const OurServices: React.FC<OurServicesProps> = ({ img, title, description, number }) => {
+
+  const isEven = number % 2 === 0;
+  const isTwoOrFour = number === 2 || number === 4;
+
   return (
     <div className='mt-10'>
-      <ul className='pl-10 border-[1px] border-stone-300'>
-        <li className='flex relative items-start'>
-          <div className='rounded-full border-[1px] border-stone-200 h-[25px] w-[25px] flex items-center justify-center absolute left-[-40px] transform -translate-x-1/2 font-bold'>
-            {number}
-          </div>
+      <ul className=''>
+        <li className='flex'>
           <div className=''>
-            <div className="flex-col items-center">
-              <div>
-                <h1 className='font-bold text-stone-800 opacity-90'>{title}</h1>
-                <h3>{description}</h3>
+            <div className="sm:flex items-center justify-around">
+              <div className={`sm:w-[50%] sm:flex flex ${isEven ? 'order-1' : 'order-2'}`}>
+                <div className={`${isTwoOrFour ? 'sm:text-end' : ''}`}>
+                  <h1 className='font-bold text-xl opacity-80'>{title}</h1>
+                  <h3 className='font-medium opacity-65'>{description}</h3>
+                </div>
               </div>
-              <div className='mt-5'>
-                <img className='h-full w-full object-cover' src={img} alt="" />
+              <div className={`mt-5 sm:w-[40%] ${isEven ? 'order-2' : 'order-1'}`}>
+                <img className='h-full w-full object-cover object-center' src={img} alt="" />
               </div>
             </div>
           </div>
