@@ -4,6 +4,6 @@
 }
 
 
-.btn-proyectos:hover img{
+.invertir-colores:hover img{
     filter: invert(1); /* Invertir el color del icono en el hover */
 }

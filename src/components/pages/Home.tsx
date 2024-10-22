@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 
       <section className='h-[auto] bg-indigo-600'>
         {/* Contenido de Bienvenida */}
-        <div className='text-white container max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
+        <div className='text-white max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
             <div className='h-[auto] p-4 sm:mx-8 sm:w-[50%]'>
               <div className=''>
                 <h1 className='sm:text-5xl font-bold mt-4'>Tu aliado en el desarrollo de software</h1>
@@ -29,46 +29,55 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-          <div className='w-[50%] sm:flex hidden '>
+          <div className='w-[50%] sm:flex hidden'>
             <img className='' src="/public/Img/Developer.png" alt="" />
           </div>
-          
         </div>
       </section>
 
-      <section className='h-[auto] mt-14'>
+      <section className='h-[auto] mt-24'>
         {/* Contenido de Nuestros Servicios */}
-        <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
-          <div className='mb-10'>
-            <h1 className='text-3xl opacity-80 font-bold flex justify-center text-center'>Nuestros Sevicios Incluyen</h1>
+        <div className='max-w-[1200px] w-full mx-auto h-[auto] flex justify-center'>
+
+          <div className='h-[auto] p-4 sm:mx-8 sm:w-[50%]'>
+              <div className=''>
+                <hr className='border-t-4 border-black opacity-80 w-[10%] mb-10'/>
+                <h1 className='text-4xl opacity-80 font-bold'>Consigue ahora el mejor producto del mercado</h1>
+              </div>
+              <div className='mt-8'>
+                <p className='text-2xl opacity-80'>Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
+              </div>
           </div>
 
-          <OurServices
-            img="/Img/DesarrolloWebsite.png"
-            title="Desarrollo Web"
-            description="Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea."
-            number={1}
-          />
+          <div className='flex-col p-4 sm:mx-8 sm:w-[50%]'>
+            <OurServices
+              title="Desarrollo Web"
+              description="Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea."
+              icon="/Icons/angulo-derecho.png"
+              number={1}
+            />
 
-          <OurServices
-            img="/Img/DesarrolloApp.png"
-            title="Aplicaciones Móviles"
-            description="Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén."
-            number={2}          />
+            <OurServices
+              title="Aplicaciones Móviles"
+              description="Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén."
+              icon="/Icons/angulo-derecho.png"
+              number={2}          />
 
-          <OurServices
-            img="/Img/Software.png"
-            title="Software a Medida"
-            description="Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos."
-            number={3}
-          />
+            <OurServices
+              title="Software a Medida"
+              description="Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos."
+              icon="/Icons/angulo-derecho.png"
+              number={3}
+            />
 
-          <OurServices
-            img="/Img/Consultoria.png"
-            title="Consultoría Tecnológica"
-            description="Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa."
-            number={4}
-          />
+            <OurServices
+              title="Consultoría Tecnológica"
+              description="Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa."
+              icon="/Icons/angulo-derecho.png"
+              number={4}
+            />
+          </div>
+
         </div>
       </section>
 
