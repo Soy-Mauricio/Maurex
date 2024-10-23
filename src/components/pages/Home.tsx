@@ -20,11 +20,12 @@ const Home: React.FC = () => {
                 <p className='mt-4 sm:text-2xl font-medium'>En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
               </div>
 
-              <div className='mt-4'>
-                <button className='rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[auto] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300'>
-                  <a className='p-2 font-semibold text-lg'>
-                    Empezar ahora
-                    <img className='w-[24px] inline-block' src="/public/Icons/angulo-pequeno-derecha.png" alt="" /></a> 
+              <div className='mt-10'>
+                <button className='rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                  <a className='p-2 font-semibold text-base flex items-center'>
+                    EMPEZAR AHORA
+                  </a>
+                  <img className='w-[26px] inline-block' src="Icons/angulo-pequeno-derecha.png" alt="" /> 
                 </button>
               </div>
             </div>
@@ -46,6 +47,15 @@ const Home: React.FC = () => {
               </div>
               <div className='mt-8'>
                 <p className='text-2xl opacity-80'>Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
+              </div>
+
+              <div className='mt-10'>
+                <button className='rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                  <a className='p-2 font-semibold text-base flex items-center '>
+                    CÓMO TRABAJAMOS
+                  </a>
+                  <img className='w-[16px] inline-block' src="Icons/angulo-derecho.png" alt="" /> 
+                </button>
               </div>
           </div>
 
@@ -85,7 +95,7 @@ const Home: React.FC = () => {
         {/* Contenido sobre nuestros proyectos */}
         <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
           <div className='h-[auto] mt-14 '>
-            <h2 className='text-3xl mt-4 font-bold flex justify-center text-center text-white'>Proyectos Destacados</h2>
+            <h2 className='text-3xl mt-4 font-bold flex justify-center text-center text-white'>Nuestros Proyectos</h2>
             <div className=' flex justify-center items-center'>
               <p className='text-center mt-4 sm:w-[75%] text-2xl text-white'>En Maurex, cada proyecto es un reto y una oportunidad de innovar. Aquí te presentamos algunos de nuestros trabajos más destacados.</p>
             </div>
@@ -93,18 +103,14 @@ const Home: React.FC = () => {
 
           {/* Utilizamos el componente ServiceBlock con props */}
           <div className='sm:flex-col mt-16 mb-16'>
+
             <ServiceBlocks
-              icon="/Icons/controlar.png"
               title="VueloYA"
               description="VueloYA es una aplicación de compra de tiquetes aéreos diseñada y desarrollada por Maurex para facilitar el proceso de búsqueda y reserva de vuelos nacionales e internacionales. El objetivo principal era crear una solución accesible y eficiente para los usuarios, permitiendo una experiencia de reserva rápida, sin fricciones y con opciones de filtrado personalizadas."
+              icons="/Icons/angulo-pequeno-derecha.png"
               isFirst={true} // Indicamos que este es el primer bloque
             />
 
-            <ServiceBlocks
-              icon="/Icons/controlar.png"
-              title="Plastisol"
-              description="Plastisol es una plataforma de comercio electrónico desarrollada por Maurex para la venta de productos plásticos, con un enfoque en ofrecer una experiencia de compra fluida y accesible para sus clientes. El objetivo principal del proyecto era crear una tienda online que permitiera a los usuarios explorar y adquirir una amplia gama de productos plásticos de forma rápida y sencilla, con opciones avanzadas de filtrado y un proceso de compra optimizado."
-            />
           </div>
         </div>
       </section>

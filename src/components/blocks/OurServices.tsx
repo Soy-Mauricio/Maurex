@@ -11,7 +11,7 @@ const OurServices: React.FC<OurServicesProps> = ({title, description, number, ic
 
     return (
 
-      <div className={`${number !== 4 ? 'mb-6' : ''} bg-slate-50 border-b-[1px] hover:border-b-indigo-500 h-[200px] flex items-center justify-center flex-col cursor-pointer group`}>
+      <div className={`${number !== 4 ? 'mb-6' : ''} bg-slate-50 border-b-[1px] border-stone-300 hover:border-b-indigo-500 h-[200px] flex items-center justify-center flex-col cursor-pointer group`}>
         <div className='flex items-center h-auto'>
           <a className='h-[100%] p-5'>
             <span className='flex items-center justify-between gap-8 relative'>
