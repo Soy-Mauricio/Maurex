@@ -4,6 +4,7 @@ import Footer from '../layout/Footer';
 import ServiceBlocks from '../blocks/ServiceBlocks';
 import OurServices from '../blocks/OurServices';
 import Equipo from '../blocks/Company';
+import Technologies from '../blocks/Technologies';
 
 
 const Home: React.FC = () => {
@@ -21,8 +22,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className='mt-10'>
-                <button className='rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
-                  <a className='p-2 font-semibold text-base flex items-center'>
+                <button className='p-3 rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                  <a className='font-semibold text-base flex items-center'>
                     EMPEZAR AHORA
                   </a>
                   <img className='w-[26px] inline-block' src="Icons/angulo-pequeno-derecha.png" alt="" /> 
@@ -51,7 +52,7 @@ const Home: React.FC = () => {
 
               <div className='mt-10'>
                 <button className='rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
-                  <a className='p-2 font-semibold text-base flex items-center '>
+                  <a className='p-3 font-semibold text-base flex items-center '>
                     CÓMO TRABAJAMOS
                   </a>
                   <img className='w-[16px] inline-block' src="Icons/angulo-derecho.png" alt="" /> 
@@ -103,14 +104,7 @@ const Home: React.FC = () => {
 
           {/* Utilizamos el componente ServiceBlock con props */}
           <div className='sm:flex-col mt-16 mb-16'>
-
-            <ServiceBlocks
-              title="VueloYA"
-              description="VueloYA es una aplicación de compra de tiquetes aéreos diseñada y desarrollada por Maurex para facilitar el proceso de búsqueda y reserva de vuelos nacionales e internacionales. El objetivo principal era crear una solución accesible y eficiente para los usuarios, permitiendo una experiencia de reserva rápida, sin fricciones y con opciones de filtrado personalizadas."
-              icons="/Icons/angulo-pequeno-derecha.png"
-              isFirst={true} // Indicamos que este es el primer bloque
-            />
-
+            <ServiceBlocks/>
           </div>
         </div>
       </section>
@@ -169,20 +163,43 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section>
-        <div className='h-[auto] mt-14 p-4 text-white bg-indigo-600'>
+      <section className='mt-14 text-white bg-indigo-600'>
+        <div className='max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center'>
+          <div className='w-[70%] mt-14 mb-14'>
             <div className=''>
-              <h2 className='text-3xl font-bold text-center'>¿Listo para transformar tu negocio?</h2>
-              <p className='mt-4'>Contáctanos para comenzar a desarrollar la solución perfecta para ti.</p>
+              <h2 className='text-4xl font-bold text-center '>La próxima revolución del mercado podría llevar tu sello. ¡Construyámosla juntos!</h2>
             </div>
 
-            <div className='mt-4'>
-              <button className='flex items-center justify-center w-[auto] bg-yellow-500 rounded-3xl'>
-                <a className='font-semibold p-2'>
-                  Solicita una consulta
-                  <img className='w-[14px] inline-block ml-1' src="/public/Icons/angulo-derecho.png" alt="" /></a> 
-              </button>
+            <div className='mt-10 flex justify-center ite'>
+                <button className='p-3 rounded-sm shadow-[0_4px_10px_rgba(255,165,0,0.6)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                  <a className='font-semibold text-base flex items-center'>
+                    CONTÁCTENOS
+                  </a>
+                </button>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='h-[auto] mt-10'>
+        {/* Contenido Nuestras Tecnologías*/}
+        <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
+          <div className=' bg-yellow-500 mx-8'>
+            <div className='flex justify-center w-[90%]'>
+              <div className=''>
+                <div className='flex mb-8'>
+                  <div className='w-[6%]'>
+                    <hr className="border-t-4 border-black opacity-80 my-4" />
+                  </div>
+                </div>
+                <h2 className='text-3xl opacity-80 font-bold'>Tecnologías</h2>
+                <p className='mt-4 text-2xl opacity-80 w-[70%]'>El equipo de desarrollo que trabaja en un proyecto utiliza únicamente tecnologías modernas y escalables para implementar aplicaciones móviles y web tal como usted lo desea.</p>
+              </div>
             </div>
+
+            <Technologies/>
+
+          </div>
         </div>
       </section>
 

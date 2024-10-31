@@ -4,6 +4,15 @@
 }
 
 
-.invertir-colores:hover img{
+.invertir-colores:hover img {
     filter: invert(1); /* Invertir el color del icono en el hover */
+}
+
+.slick-dots li.slick-active button::before {
+    color: white;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: rgb(255, 255, 255); /* Cambia el color de los puntos */
 }
