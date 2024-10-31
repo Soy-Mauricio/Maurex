@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 interface Technology {
     nametech: string;
@@ -6,14 +6,16 @@ interface Technology {
 }
 
 
-const Technologies: React.FC<TechnologiesProps> = () => {
+const Technologies: React.FC = () => {
+    const [showMobile, setShowMobile] = useState(false);
 
     // Array de tecnologías de backend
     const backendTechnologies: Technology[] = [
-        { name: 'Node.js', logo: '' },
-        { name: 'Django', logo: '' },
-        { name: 'Python', logo: '' },
-        { name: 'Type Script', logo: '' },
+        { name: 'Node JS', logo: '/Logo/Logo-NodeJS.png' },
+        { name: 'Django', logo: '/Logo/Logo-NodeJS.png' },
+        { name: 'Python', logo: '/Logo/Logo-NodeJS.png' },
+        { name: 'Type Script', logo: '/Logo/Logo-NodeJS.png' },
+        { name: 'Django REST', logo: '/Logo/Logo-NodeJS.png' },
     ];
 
     // Array de tecnologías de frontend
@@ -24,47 +26,91 @@ const Technologies: React.FC<TechnologiesProps> = () => {
         // Agrega más tecnologías según sea necesario
     ];
 
+    // Array de tecnologías móviles
+    const mobileTechnologies: Technology[] = [
+        { name: 'React Native', logo: '/Logo/Logo-ReactNative.png' },
+        { name: 'Flutter', logo: '/Logo/Logo-Flutter.png' },
+        { name: 'Swift', logo: '/Logo/Logo-Swift.png' },
+        { name: 'Kotlin', logo: '/Logo/Logo-Kotlin.png' },
+    ];
+
+    // Función para alternar entre tecnologías web y móviles
+    const toggleTechnologies = (isMobile: boolean) => {
+        setShowMobile(isMobile);
+    };
+
     return (
         <>
 
-        <div className='flex justify-between items-center mt-10 bg-yellow-500 text-xl font-semibold'>
-            <span className='w-[50%] bg-slate-400 text-center p-2 rounded-full'>Tecnologías Web</span>
-            <span className='w-[50%] ml-2 bg-slate-400 text-center p-2 rounded-full'>Tecnologías Móviles</span>
-        </div>
-
-        <div className='flex justify-between mt-4'>
-            <div className='w-[48%]'>
-                <span className='font-bold text-lg'>
-                    Backend
+            <div className='flex justify-between gap-2 items-center mt-10 text-xl font-semibold'>
+                <span
+                    onClick={() => toggleTechnologies(false)}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${!showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
+                >
+                    Tecnologías Web
                 </span>
-                <div className='grid grid-cols-3 gap-4 mt-6'>
-                    {backendTechnologies.map((tech, index) => (
-                        <div className='bg-green-300'>
-                            <div key={index} className='bg-red-400'>
-                                <img src={tech.logo} alt="" className='w-8 h-8 mr-2' />
-                            </div>
-                            <span>{tech.name}</span>
-                        </div>
-                    ))}
-                </div>
+                <span
+                    onClick={() => toggleTechnologies(true)}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
+                >
+                    Tecnologías Móviles
+                </span>
             </div>
 
-            <div className='w-[48%]'>
-                <span className='font-bold text-lg'>
-                    Frontend
-                </span>
-                <div className='grid grid-cols-3 gap-4 mt-6'>
-                    {frontendTechnologies.map((tech, index) => (
-                        <div>
-                            <div key={index} className='bg-red-400'>
-                                <img src={tech.logo} alt="" className='w-8 h-8 mr-2' />
+            <div className='grid grid-cols-2 gap-10 mt-4'>
+                {!showMobile ? (
+
+                    <>
+
+                        <div className=''>
+                            <span className='font-bold text-lg'>
+                                Backend
+                            </span>
+                            <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
+                                {backendTechnologies.map((tech, index) => (
+                                    <div className='flex flex-col items-center bg-slate-400'>
+                                        <div key={index} className='bg-red-400 p-3'>
+                                            <img src={tech.logo} alt="" className='w-20 h-20' />
+                                        </div>
+                                        <span className=''>{tech.name}</span>
+                                    </div>
+                                ))}
                             </div>
-                            <span>{tech.name}</span>
                         </div>
-                    ))}
-                </div>
+
+                        <div className=''>
+                            <span className='font-bold text-lg'>
+                                Frontend
+                            </span>
+                            <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
+                                {frontendTechnologies.map((tech, index) => (
+                                    <div className='flex flex-col items-center bg-slate-400'>
+                                        <div key={index} className='bg-red-400 p-3'>
+                                            <img src={tech.logo} alt="" className='w-20 h-20' />
+                                        </div>
+                                        <span>{tech.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+
+                ) : (
+                    <div className="">
+                        <span className="font-bold text-lg">Tecnologías Móviles</span>
+                        <div className="flex flex-wrap gap-6 w-full mt-4">
+                            {mobileTechnologies.map((tech, index) => (
+                                <div key={index} className="flex flex-col items-center bg-slate-400">
+                                    <div className="bg-red-400 p-3">
+                                        <img src={tech.logo} alt="" className="w-20 h-20" />
+                                    </div>
+                                    <span>{tech.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
-        </div>
 
         </>
     );

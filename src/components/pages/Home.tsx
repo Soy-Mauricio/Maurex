@@ -184,7 +184,7 @@ const Home: React.FC = () => {
       <section className='h-[auto] mt-10'>
         {/* Contenido Nuestras Tecnologías*/}
         <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
-          <div className=' bg-yellow-500 mx-8'>
+          <div className='mx-8'>
             <div className='flex justify-center w-[90%]'>
               <div className=''>
                 <div className='flex mb-8'>
