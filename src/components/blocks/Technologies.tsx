@@ -30,7 +30,10 @@ const Technologies: React.FC = () => {
     const mobileTechnologies: Technology[] = [
         { name: 'React Native', logo: '/Logo/Logo-ReactNative.png' },
         { name: 'Flutter', logo: '/Logo/Logo-Flutter.png' },
-        { name: 'Swift', logo: '/Logo/Logo-Swift.png' },
+    ];
+
+    // Array de tecnologías android
+    const androidTechnologies: Technology[] = [
         { name: 'Kotlin', logo: '/Logo/Logo-Kotlin.png' },
     ];
 
@@ -68,11 +71,11 @@ const Technologies: React.FC = () => {
                             </span>
                             <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
                                 {backendTechnologies.map((tech, index) => (
-                                    <div className='flex flex-col items-center bg-slate-400'>
+                                    <div className='flex flex-col items-center'>
                                         <div key={index} className='bg-red-400 p-3'>
                                             <img src={tech.logo} alt="" className='w-20 h-20' />
                                         </div>
-                                        <span className=''>{tech.name}</span>
+                                        <span className='font-semibold mt-2'>{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
@@ -84,11 +87,11 @@ const Technologies: React.FC = () => {
                             </span>
                             <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
                                 {frontendTechnologies.map((tech, index) => (
-                                    <div className='flex flex-col items-center bg-slate-400'>
+                                    <div className='flex flex-col items-center'>
                                         <div key={index} className='bg-red-400 p-3'>
                                             <img src={tech.logo} alt="" className='w-20 h-20' />
                                         </div>
-                                        <span>{tech.name}</span>
+                                        <span className='font-semibold mt-2'>{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
@@ -96,19 +99,39 @@ const Technologies: React.FC = () => {
                     </>
 
                 ) : (
-                    <div className="">
-                        <span className="font-bold text-lg">Tecnologías Móviles</span>
-                        <div className="flex flex-wrap gap-6 w-full mt-4">
-                            {mobileTechnologies.map((tech, index) => (
-                                <div key={index} className="flex flex-col items-center bg-slate-400">
-                                    <div className="bg-red-400 p-3">
-                                        <img src={tech.logo} alt="" className="w-20 h-20" />
+
+                    <>
+
+                        <div className=''>
+                            <span className='font-bold text-lg'>Android</span>
+                            <div className='flex flex-wrap gap-6 w-full mt-4'>
+                                {androidTechnologies.map((tech, index) => (
+                                    <div key={index} className='flex flex-col items-center'>
+                                        <div className='bg-red-400 p-3'>
+                                            <img src={tech.logo} alt="" className='w-20 h-20'/>
+                                        </div>
+                                        <span className='font-semibold mt-2'>{tech.name}</span>
                                     </div>
-                                    <span>{tech.name}</span>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
+
+                        <div className=''>
+                            <span className='font-bold text-lg'>Multiplataforma</span>
+                            <div className='flex flex-wrap gap-6 w-full mt-4'>
+                                {mobileTechnologies.map((tech, index) => (
+                                    <div key={index} className='flex flex-col items-center'>
+                                        <div className='bg-red-400 p-3'>
+                                            <img src={tech.logo} alt="" className='w-20 h-20'/>
+                                        </div>
+                                        <span className='font-semibold mt-2'>{tech.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                    </>
+
                 )}
             </div>
 
