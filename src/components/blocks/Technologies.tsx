@@ -50,17 +50,17 @@ const Technologies: React.FC = () => {
                     onClick={() => toggleTechnologies(false)}
                     className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${!showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
                 >
-                    Tecnologías Web
+                    Web
                 </span>
                 <span
                     onClick={() => toggleTechnologies(true)}
                     className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
                 >
-                    Tecnologías Móviles
+                    Móviles
                 </span>
             </div>
 
-            <div className='grid grid-cols-2 gap-10 mt-4'>
+            <div className='grid grid-cols-2 gap-10 mt-4 sm:h-[350px]'>
                 {!showMobile ? (
 
                     <>

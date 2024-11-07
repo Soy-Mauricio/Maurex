@@ -4,9 +4,9 @@ const Footer: React.FC = () => {
   return (
     <footer className='relative w-full bg-stone-100'>
 
-      <div className='grid mt-14 gap-4 p-4 max-w-[1200px] w-full mx-auto h-[auto]'>
+      <div className='mt-14 p-4 max-w-[1200px] w-full mx-auto h-[auto]'>
         {/* Columnas individuales */}
-        <div className='flex flex-col lg:flex-row justify-around items-start space-y-6 lg:space-y-0'>
+        <div className='mt-4 flex flex-col lg:flex-row justify-around items-start space-y-6 lg:space-y-0'>
           <div>
             <h2 className='font-bold text-stone-800 opacity-90'>CONTACTANOS</h2>
             <ul className='text-stone-800 opacity-50'>
@@ -57,11 +57,12 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
+
         </div>
 
         <hr className='mt-4 bg-black opacity-10 h-[2px]' />
 
-        <div>
+        <div className='mt-4'>
           <p className='text-center font-bold text-stone-800 opacity-80'>
             © 2024 MAUREX DERECHOS RESERVADOS.
           </p>

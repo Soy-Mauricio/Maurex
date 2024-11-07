@@ -13,7 +13,7 @@ const ImagenesBlocks: React.FC = () => {
     // Cambia la imagen cada 5 segundos
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % imagenes.length);
-    }, 5000);
+    }, 6000);
 
     // Limpia el intervalo cuando el componente se desmonte
     return () => clearInterval(interval);

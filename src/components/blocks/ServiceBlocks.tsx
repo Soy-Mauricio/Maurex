@@ -33,7 +33,7 @@ const ServiceBlocks: React.FC = () => {
   const settings = {
     dots: true, // Muestra los puntos de navegación
     infinite: true, // Carrusel infinito
-    speed: 2000, // Velocidad de transición
+    speed: 3000, // Velocidad de transición
     slidesToShow: 1, // Cuántos slides mostrar a la vez
     slidesToScroll: 1, // Cuántos slides desplazar al hacer clic
     autoplay: true, // Reproducción automática
@@ -50,11 +50,11 @@ const ServiceBlocks: React.FC = () => {
               <ImagenesBlocks />
             </div>
             <div className="text-white flex items-start sm:w-[40%] h-auto">
-              <div className="h-auto">
-                <h1 className="font-bold text-2xl">{slide.title}</h1>
+              <div className="h-auto sm:p-0 p-4">
+                <h1 className="font-bold text-2xl sm:mt-0 mt-6">{slide.title}</h1>
                 <p className="text-lg opacity-85 mt-2">{slide.description}</p>
-                <div className="mt-12 flex items-center transition-all duration-300 ease-in-out transform translate-x-[-20px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
-                  <a className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px]" href="#">
+                <div className="mt-6 sm:mt-14 flex items-center sm:transition-all sm:duration-300 sm:ease-in-out sm:transform sm:translate-x-[-20px] sm:opacity-0 sm:group-hover:translate-x-0 sm:group-hover:opacity-100">
+                  <a className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px] transition-all duration-500" href="#">
                     VER MÁS
                   </a>
                   <img className="w-[22px]" src={slide.icons} alt="Siguiente" />
