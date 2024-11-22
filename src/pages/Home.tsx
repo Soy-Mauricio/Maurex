@@ -1,17 +1,16 @@
 import React from 'react';
-import Navbar from '../layout/Navbar';
-import Footer from '../layout/Footer';
-import ServiceBlocks from '../blocks/ServiceBlocks';
-import OurServices from '../blocks/OurServices';
-import Equipo from '../blocks/Company';
-import Technologies from '../blocks/Technologies';
+import MainLayout from '../layouts/MainLayout';
+import ServiceBlocks from '../components/homeSections/ServiceBlocks';
+import OurServices from '../components/homeSections/OurServices';
+import Equipo from '../components/homeSections/Company';
+import Technologies from '../components/homeSections/Technologies';
 
 
 const Home: React.FC = () => {
   return (
-    <>
-      <Navbar/>
 
+    <MainLayout>
+      
       <section className='h-[auto] bg-indigo-600'>
         {/* Contenido de Bienvenida */}
         <div className='text-white max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
@@ -26,13 +25,13 @@ const Home: React.FC = () => {
                   <a className='font-semibold text-base flex items-center'>
                     EMPEZAR AHORA
                   </a>
-                  <img className='w-[26px] inline-block' src="Icons/angulo-pequeno-derecha.png" alt="" /> 
+                  <img className='w-[26px] inline-block' src="assets/Icons/angulo-pequeno-derecha.png" alt="" /> 
                 </button>
               </div>
             </div>
 
           <div className='w-[50%] sm:flex hidden'>
-            <img className='' src="/public/Img/Developer.png" alt="" />
+            <img className='' src="assets/Img/Developer.png" alt="" />
           </div>
         </div>
       </section>
@@ -55,7 +54,7 @@ const Home: React.FC = () => {
                   <a className='p-3 font-semibold text-base flex items-center '>
                     CÓMO TRABAJAMOS
                   </a>
-                  <img className='w-[16px] inline-block' src="Icons/angulo-derecho.png" alt="" /> 
+                  <img className='w-[16px] inline-block' src="assets/Icons/angulo-derecho.png" alt="" /> 
                 </button>
               </div>
           </div>
@@ -64,27 +63,27 @@ const Home: React.FC = () => {
             <OurServices
               title="Desarrollo Web"
               description="Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea."
-              icon="/Icons/angulo-derecho.png"
+              icon="assets/Icons/angulo-derecho.png"
               number={1}
             />
 
             <OurServices
               title="Aplicaciones Móviles"
               description="Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén."
-              icon="/Icons/angulo-derecho.png"
+              icon="assets/Icons/angulo-derecho.png"
               number={2}          />
 
             <OurServices
               title="Software a Medida"
               description="Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos."
-              icon="/Icons/angulo-derecho.png"
+              icon="assets/Icons/angulo-derecho.png"
               number={3}
             />
 
             <OurServices
               title="Consultoría Tecnológica"
               description="Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa."
-              icon="/Icons/angulo-derecho.png"
+              icon="assets/Icons/angulo-derecho.png"
               number={4}
             />
           </div>
@@ -140,17 +139,17 @@ const Home: React.FC = () => {
           <div className='flex'>
             <div className='sm:flex sm:justify-around'>
               <Equipo 
-                img="/public/Img/Joker.jpg"
+                img="assets/Img/Joker.jpg"
                 name="John Camargo"
-                icon="/public/Icons/estrella.png"
+                icon="assets/Icons/estrella.png"
                 cargo="Desarrollador Backend"
                 conocimientos="Experto en la creación de APIs, manejo de bases de datos y herramientas como Node.js, Python, Django, MongoDB, y PostgreSQL."
               />
 
               <Equipo 
-                img="/public/Img/JokerDos.jpg"
+                img="assets/Img/JokerDos.jpg"
                 name="Mauricio Sanabria"
-                icon="/public/Icons/estrella.png"
+                icon="assets/Icons/estrella.png"
                 cargo="Desarrollador Frontend"
                 conocimientos="Especialista en interfaces intuitivas y herramientas como React, JavaScript, TypeScript, Axios, Tailwind CSS, HTML y CSS."
               />
@@ -197,9 +196,8 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <Footer/>
-
-    </>
+    </MainLayout>
+    
   );
 };
 

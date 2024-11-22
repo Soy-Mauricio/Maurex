@@ -16,13 +16,13 @@ const slidesData: Slide[] = [
   {
     title: "VueloYA",
     description: "VueloYA es una aplicación de compra de tiquetes aéreos diseñada y desarrollada por Maurex para facilitar el proceso de búsqueda y reserva de vuelos nacionales e internacionales. El objetivo principal era crear una solución accesible y eficiente para los usuarios, permitiendo una experiencia de reserva rápida, sin fricciones y con opciones de filtrado personalizadas.",
-    icons: "/Icons/angulo-pequeno-derecha.png",
+    icons: "assets/Icons/angulo-pequeno-derecha.png",
     logos: "Hola"
   },
   {
     title: "Plastisol",
     description: "Plastisol es una plataforma de venta de productos plásticos diseñada y desarrollada por Maurex para simplificar el proceso de búsqueda y cotización. Nuestro objetivo principal es ofrecer una solución accesible y eficiente para los usuarios, permitiendo una experiencia de compra rápida, sin complicaciones y con opciones de cotización personalizadas.",
-    icons: "/Icons/angulo-pequeno-derecha.png",
+    icons: "assets/Icons/angulo-pequeno-derecha.png",
     logos: "Bye"
   },
   // Puedes añadir más slides aquí
