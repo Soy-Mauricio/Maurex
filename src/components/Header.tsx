@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,8 @@ const Navbar: React.FC = () => {
       <nav className='max-w-[1200px] w-full mx-auto'>
         <div className='flex justify-between items-center relative p-4 sm:mx-8'>
           {/* Logo */}
-          <div className='text-white text-2xl font-bold cursor-pointer'>
-            <a href="">MAU</a><a className='text-yellow-400 transition-all duration-700' href="">REX</a>
+          <div className='text-white text-2xl font-bold cursor-pointer flex'>
+            <Link to='/home'> MAU </Link><Link to='/home' className='text-yellow-400 transition-all duration-700'>REX</Link>
           </div>
 
           {/* Botón del menú hamburguesa */}

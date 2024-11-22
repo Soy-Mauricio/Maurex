@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout';
 import ServiceBlocks from '../components/homeSections/ServiceBlocks';
 import OurServices from '../components/homeSections/OurServices';
@@ -51,9 +52,7 @@ const Home: React.FC = () => {
 
               <div className='mt-10'>
                 <button className='rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
-                  <a className='p-3 font-semibold text-base flex items-center '>
-                    CÓMO TRABAJAMOS
-                  </a>
+                  <Link to='/our-work' className='p-3 font-semibold text-base flex items-center'> CÓMO TRABAJAMOS </Link>
                   <img className='w-[16px] inline-block' src="assets/Icons/angulo-derecho.png" alt="" /> 
                 </button>
               </div>
