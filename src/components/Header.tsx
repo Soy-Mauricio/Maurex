@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
           {/* Botón del menú hamburguesa */}
           <div className='md:hidden flex items-center'>
             <button onClick={toggleMenu} className='text-white focus:outline-none'>
-              <img className='w-[28px]' src="/public/Icons/menu-hamburguesa.png" alt="Open Icon" />
+              <img className='w-[28px]' src="assets/Icons/menu-hamburguesa.png" alt="Open Icon" />
             </button>
           </div>
 
@@ -33,21 +33,21 @@ const Navbar: React.FC = () => {
               <div className='flex items-center justify-center w-[auto] mb-4 md:mb-0'>
                 <a href="#" className='text-white font-semibold text-lg border-b-[1px] border-transparent sm:hover:border-white transition-all duration-500'>
                   Nosotros
-                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="/public/Icons/angulo-derecho.png" alt="" />
+                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="assets/Icons/angulo-derecho.png" alt="" />
                   </a>
 
               </div>
               <div className='flex items-center justify-center w-[auto] mb-4 md:mb-0'>
                 <a href="#" className="text-white font-semibold text-lg border-b-[1px] border-transparent sm:hover:border-white transition-all duration-500">
                   Servicios
-                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="/public/Icons/angulo-derecho.png" alt="" />
+                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="assets/Icons/angulo-derecho.png" alt="" />
                   </a>
 
               </div>
               <div className='flex items-center justify-center w-[auto]'>
                 <a href="#" className="text-white font-semibold text-lg border-b-[1px] border-transparent sm:hover:border-white transition-all duration-500">
                   Contacto
-                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="/public/Icons/angulo-derecho.png" alt="" />
+                  <img className='w-[15px] h-[14px] ml-1 md:hidden inline-block' src="assets/Icons/angulo-derecho.png" alt="" />
                   </a>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             {/* Botón para cerrar el menú en pantallas pequeñas */}
             {isOpen && (
               <button onClick={toggleMenu} className="absolute top-4 right-4 text-white md:hidden">
-                <img className='w-[25px]' src="/public/Icons/cruz.png" alt="Close Icon"/>
+                <img className='w-[25px]' src="assets/Icons/cruz.png" alt="Close Icon"/>
               </button>
             )}
           </div>
