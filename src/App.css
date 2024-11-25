@@ -8,11 +8,12 @@
     filter: invert(1); /* Invertir el color del icono en el hover */
 }
 
-.slick-dots li.slick-active button::before {
+.slick-slider .slick-dots li.slick-active button::before {
     color: white;
 }
-
-.slick-dots li button:before {
+  
+.slick-slider .slick-dots li button::before {
     font-size: 15px;
-    color: rgb(255, 255, 255); /* Cambia el color de los puntos */
+    color: rgb(255, 255, 255);
 }
+  
