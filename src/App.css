@@ -17,3 +17,7 @@
     color: rgb(255, 255, 255);
 }
   
+.puntuacion{
+    color: #4F46E5;
+    text-shadow: rgb(255, 255, 255) -1px 0px, rgb(255, 255, 255) 0px 1px, rgb(255, 255, 255) 1px 0px, rgb(255, 255, 255) 0px -1px;
+}
