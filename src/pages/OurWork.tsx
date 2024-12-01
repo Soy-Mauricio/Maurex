@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout';
 import { Link } from 'react-router-dom'
 import HowWork from '../components/ourWorkSections/HowWork';
 import Technologies from '../components/homeSections/Technologies';
+import Reviews from '../components/ourWorkSections/Reviews';
 
 const OurWork: React.FC = () => {
   return (
@@ -98,8 +99,8 @@ const OurWork: React.FC = () => {
       <section className='h-[auto] mt-24 bg-indigo-600'>
         {/* Contenido de Bienvenida */}
         <div className='max-w-[1200px] w-full mx-auto h-[auto] flex items-center'>
-            <div className='h-[auto] p-4 sm:mx-8 mb-4'>
-                <div className='mt-12 text-white sm:flex sm:justify-between sm:items-center'>
+            <div className='h-[auto] p-4 sm:mx-8 mb-4 w-full'>
+                <div className='mt-12 text-white flex justify-between items-center'>
                   <div className=''>
                     <hr className='border-t-4 border-white sm:w-[12%] w-[15%] mb-10'/>
                     <h2 className='text-4xl font-bold'>Testimonios de clientes</h2>
@@ -109,40 +110,12 @@ const OurWork: React.FC = () => {
                   </div>
                   <div className='mt-4 sm:mt-0 sm:flex-col flex items-center'>
                     <div className='puntuacion text-8xl font-extrabold'>4.9</div>
-                    <div className='ml-4 sm:ml-0 text-2xl flex justify-center'> ★ ★ ★ ★ ★</div>
+                    <div className='ml-4 sm:ml-0 text-2xl flex justify-center'>★ ★ ★ ★ ★</div>
                   </div>
                 </div>
 
-                <div>
-                    <HowWork 
-                      title="Reunión inicial"
-                      description="Todo comienza escuchando tus necesidades. Analizamos tus objetivos para diseñar una solución que realmente marque la diferencia."
-                      number={1}
-                    />
-
-                    <HowWork 
-                      title="Planeación"
-                      description="Creamos un plan detallado, priorizando tus metas, plazos y presupuesto. Definimos claramente cada etapa del proyecto"
-                      number={2}
-                    />
-
-                    <HowWork 
-                      title="Diseño y desarrollo"
-                      description="Nuestro equipo combina diseño intuitivo con desarrollo eficiente, asegurando una experiencia de usuario excepcional."
-                      number={3}
-                    />
-
-                    <HowWork 
-                      title="Pruebas"
-                      description="Realizamos pruebas exhaustivas para garantizar que el producto final sea seguro, estable y funcional."
-                      number={4}
-                    />
-
-                    <HowWork 
-                      title="Implementación y soporte"
-                      description="Lanzamos tu proyecto con éxito y ofrecemos soporte continuo para asegurarnos de que todo funcione como lo planeaste."
-                      number={5}
-                    />
+                <div className='flex justify-center mt-12 mb-12'>
+                  <Reviews/>
                 </div>
 
             </div>
