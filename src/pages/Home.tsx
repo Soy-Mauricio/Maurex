@@ -167,7 +167,7 @@ const Home: React.FC = () => {
             <div className='mt-10 flex justify-center ite'>
                 <button className='p-3 rounded-sm shadow-[0_4px_10px_rgba(255,255,255,0.5)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
                   <a className='font-semibold text-base flex items-center'>
-                    CONTÁCTENOS
+                    CONTÁCTANOS
                   </a>
                 </button>
               </div>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import HowWork from '../components/ourWorkSections/HowWork';
 import Technologies from '../components/homeSections/Technologies';
 import Reviews from '../components/ourWorkSections/Reviews';
+import Trajectory from '../components/ourWorkSections/Trajectory';
 
 const OurWork: React.FC = () => {
   return (
@@ -105,7 +106,7 @@ const OurWork: React.FC = () => {
                     <hr className='border-t-4 border-white sm:w-[12%] w-[15%] mb-10'/>
                     <h2 className='text-4xl font-bold'>Testimonios de clientes</h2>
                     <div className='mt-8'>
-                      <span className='text-lg italic'>Tenemos más de 10+ reseñas con una puntuación media de</span>
+                      <span className='text-xl italic'>Tenemos más de 10+ reseñas con una puntuación media de</span>
                     </div>
                   </div>
                   <div className='mt-4 sm:mt-0 sm:flex-col flex items-center'>
@@ -114,10 +115,39 @@ const OurWork: React.FC = () => {
                   </div>
                 </div>
 
-                <div className='flex justify-center mt-12 mb-12'>
+                <div className='flex justify-center mt-14 mb-12'>
                   <Reviews/>
                 </div>
 
+                <div className='mt-20 mb-10 text-xl italic text-white'>
+                  <Trajectory 
+                    projects="+10 proyectos completados."
+                    hours="+500 horas de desarrollo acumuladas."
+                    satisfaction="100% de satisfacción en entregas puntuales."
+                  />
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <section className='h-auto'>
+        <div className='max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center'>
+            <div className='sm:w-[70%] mt-14 mb-14 p-4'>
+              <div className=''>
+                <div className='flex justify-center mb-8'>
+                    <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 my-4" />
+                </div>
+                <h2 className='text-2xl sm:text-4xl font-bold text-center text-stone-800 opacity-90'>¿Tienes un proyecto en mente?</h2>
+              </div>
+
+              <div className='mt-10 mb-5 flex justify-center ite'>
+                  <button className='p-3 shadow-[0_4px_10px_rgba(0,0,0,0.3)] rounded-sm flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                    <a className='font-semibold text-base flex items-center opacity-80'>
+                      CONTÁCTANOS
+                    </a>
+                  </button>
+                </div>
             </div>
         </div>
       </section>
