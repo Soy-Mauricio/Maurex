@@ -4,9 +4,10 @@ interface HowWorkProps {
     title: string;
     description: string;
     number: number;
+    img: string;
 }
 
-const HowWork: React.FC<HowWorkProps> = ({title, description, number}) => {
+const HowWork: React.FC<HowWorkProps> = ({title, description, number, img}) => {
 
     return (
 
@@ -16,9 +17,12 @@ const HowWork: React.FC<HowWorkProps> = ({title, description, number}) => {
             <h4>{title}</h4>
         </div>
         
-        <div className=' p-5 flex justify-center items-center'>
+        <div className=' p-5 flex flex-col justify-center items-center'>
             <div className='italic border-l-[1px] border-black mt-2 text-xl'>
                 <p className='ml-2'>{description}</p>
+            </div>
+            <div className='mt-8'>
+                <img className='w-[300px] h-[300px]' src={img} alt="" />
             </div>
         </div>
       </div>

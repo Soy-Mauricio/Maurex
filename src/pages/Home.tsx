@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
     <MainLayout>
       
-      <section className='h-[auto] bg-indigo-600'>
+      <section className='h-auto color-sections'>
         {/* Contenido de Bienvenida */}
         <div className='text-white max-w-[1200px] w-full mx-auto h-[auto] flex justify-center items-center'>
             <div className='h-[auto] p-4 sm:mx-8 sm:w-[50%] mb-4'>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
               </div>
 
               <div className='mt-10'>
-                <button className='p-3 rounded-sm shadow-[0_4px_10px_rgba(255,255,255,0.5)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                <button className='p-3 rounded-sm flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
                   <a className='font-semibold text-base flex items-center'>
                     EMPEZAR AHORA
                   </a>
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
             </div>
 
           <div className='w-[50%] sm:flex hidden'>
-            <img className='' src="assets/Img/Developer.png" alt="" />
+            <img className='object-cover' src="assets/Img/Developer.png" alt="" />
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className='h-[auto] mt-14 bg-indigo-600'>
+      <section className='h-[auto] mt-14 color-sections-dos'>
         {/* Contenido sobre nuestros proyectos */}
         <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
           <div className='h-[auto] mt-14 '>
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className='mt-14 text-white bg-indigo-600'>
+      <section className='mt-14 text-white bg-colorAction-ACTION'>
         <div className='max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center'>
           <div className='sm:w-[70%] mt-14 mb-14'>
             <div className=''>
@@ -165,7 +165,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className='mt-10 flex justify-center ite'>
-                <button className='p-3 rounded-sm shadow-[0_4px_10px_rgba(255,255,255,0.5)] flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                <button className='p-3 rounded-sm  flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
                   <a className='font-semibold text-base flex items-center'>
                     CONTÁCTANOS
                   </a>

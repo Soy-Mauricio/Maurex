@@ -7,9 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        colorCard: {
-          DEFAULT: '#E3E1D9',
+        colorAction: {
+          ACTION: '#3700ff',
         },
+      },
+      backgroundImage: {
+        'custom-svg': "url('/assets/Img/FondoTres.svg')",
+        'custom-dos': "url('/assets/Img/FondoCinco.svg')"
       },
     },
   },

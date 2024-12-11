@@ -68,7 +68,7 @@ const Reviews: React.FC = () => {
                                         <img className="mr-2 w-5" src={review.flag} alt="Flag" />
                                         <p className="text-black opacity-85">{review.location}</p>
                                     </div>
-                                    <div className="flex justify-center items-center mt-4 text-xl text-indigo-600">
+                                    <div className="flex justify-center items-center mt-4 text-xl text-colorAction-ACTION">
                                         <p className="mr-2 font-semibold">{review.punctuation}</p>
                                         <p>★ ★ ★ ★ ★</p>
                                     </div>

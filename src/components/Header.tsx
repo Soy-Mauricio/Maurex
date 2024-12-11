@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className='bg-indigo-600 flex h-auto'>
+    <header className='bg-black flex h-auto'>
       <nav className='max-w-[1200px] w-full mx-auto'>
         <div className='flex justify-between items-center relative p-4 sm:mx-8'>
           {/* Logo */}
