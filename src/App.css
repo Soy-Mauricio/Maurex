@@ -8,11 +8,28 @@
     filter: invert(1); /* Invertir el color del icono en el hover */
 }
 
-.slick-dots li.slick-active button::before {
+.slick-slider .slick-dots li.slick-active button::before {
     color: white;
 }
-
-.slick-dots li button:before {
+  
+.slick-slider .slick-dots li button::before {
     font-size: 15px;
-    color: rgb(255, 255, 255); /* Cambia el color de los puntos */
+    color: rgb(255, 255, 255);
+}
+  
+.puntuacion{
+    color: #1e008c;
+    text-shadow: rgb(255, 255, 255) -1px 0px, rgb(255, 255, 255) 0px 1px, rgb(255, 255, 255) 1px 0px, rgb(255, 255, 255) 0px -1px;
+}
+
+
+.color-sections{
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #3700ff 100%);
+}
+
+.color-sections-dos{
+    background-color: #000000;
+    background-image: linear-gradient(140deg, #000000 0%, #3700ff 100%);
+
 }

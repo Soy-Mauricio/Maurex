@@ -48,13 +48,13 @@ const Technologies: React.FC = () => {
             <div className='flex justify-between gap-2 items-center mt-10 text-xl font-semibold'>
                 <span
                     onClick={() => toggleTechnologies(false)}
-                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${!showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${!showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[1px]'}`}
                 >
                     Web
                 </span>
                 <span
                     onClick={() => toggleTechnologies(true)}
-                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${showMobile ? 'bg-indigo-600 text-white' : 'border-[1px]'}`}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[1px]'}`}
                 >
                     Móviles
                 </span>
