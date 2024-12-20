@@ -12,8 +12,7 @@ export default {
         },
       },
       backgroundImage: {
-        'custom-svg': "url('/assets/Img/FondoTres.svg')",
-        'custom-dos': "url('/assets/Img/FondoCinco.svg')"
+        'custom-svg': "url('./public/assets/Img/FondoUno.svg')",
       },
     },
   },

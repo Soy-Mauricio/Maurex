@@ -13,7 +13,7 @@ const OurWork: React.FC = () => {
       <section className='h-[auto] color-sections'>
         {/* Contenido de Bienvenida */}
         <div className='text-white max-w-[1200px] w-full mx-auto h-[auto] flex items-center'>
-            <div className='h-[auto] p-4 sm:mx-8 sm:w-[75%] mb-4'>
+            <div className='h-[650px] p-4 sm:mx-8 sm:w-[80%] mb-4 flex flex-col justify-center'>
               <div className=''>
                 <h1 className='sm:text-5xl text-4xl font-bold mt-4'>Transformamos tus ideas en soluciones de software personalizadas.</h1>
                 <p className='mt-6 text-2xl font-medium'>En Maurex, combinamos creatividad, tecnología y compromiso para desarrollar soluciones de software que impulsan el éxito de nuestros clientes. Nuestro equipo trabaja mano a mano contigo para crear productos innovadores y de alta calidad.</p>
@@ -86,18 +86,7 @@ const OurWork: React.FC = () => {
         {/* Contenido Nuestras Tecnologías*/}
         <div className='h-[auto] p-4 max-w-[1200px] w-full mx-auto'>
           <div className='sm:mx-8'>
-            <div className='flex justify-center sm:w-[75%]'>
-              <div className=''>
-                <div className='flex mb-8'>
-                  <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 my-4" />
-                </div>
-                <h2 className='text-3xl opacity-80 font-bold'>Tecnologías que utilizamos</h2>
-                <p className='mt-4 text-2xl opacity-80 sm:w-[85%]'>En Maurex utilizamos un stack tecnológico sólido y moderno para ofrecer soluciones de software robustas y escalables. Al combinar estas herramientas, garantizamos proyectos de alta calidad, optimizados para cumplir con tus necesidades y los estándares más exigentes del mercado.</p>
-              </div>
-            </div>
-
             <Technologies/>
-
           </div>
         </div>
       </section>
@@ -105,55 +94,55 @@ const OurWork: React.FC = () => {
       <section className='h-[auto] mt-24 color-sections-dos'>
         {/* Contenido de Bienvenida */}
         <div className='max-w-[1200px] w-full mx-auto h-[auto] flex items-center'>
-            <div className='h-[auto] p-4 sm:mx-8 mb-4 w-full'>
-                <div className='mt-12 text-white flex justify-between items-center'>
-                  <div className=''>
-                    <hr className='border-t-4 border-white sm:w-[10%] w-[15%] mb-10'/>
-                    <h2 className='text-4xl font-bold'>Testimonios de clientes</h2>
-                    <div className='mt-8'>
-                      <span className='text-xl italic'>Tenemos más de 10+ reseñas con una puntuación media de</span>
-                    </div>
-                  </div>
-                  <div className='mt-4 sm:mt-0 sm:flex-col flex items-center'>
-                    <div className='puntuacion text-8xl font-extrabold'>4.9</div>
-                    <div className='ml-4 sm:ml-0 text-2xl flex justify-center'>★ ★ ★ ★ ★</div>
-                  </div>
+          <div className='h-[auto] mb-4 w-full'>
+            <div className='mt-12 p-4 sm:mx-8 text-white flex justify-between items-center'>
+              <div className=''>
+                <hr className='border-t-4 border-white sm:w-[10%] w-[15%] mb-10'/>
+                <h2 className='text-4xl font-bold'>Testimonios de clientes</h2>
+                <div className='mt-8'>
+                  <span className='text-xl italic'>Tenemos más de 10+ reseñas con una puntuación media de</span>
                 </div>
+              </div>
 
-                <div className='flex justify-center mt-14 mb-12'>
-                  <Reviews/>
-                </div>
-
-                <div className='mt-20 mb-10 text-xl italic text-white'>
-                  <Trajectory 
-                    projects="+10 proyectos completados."
-                    hours="+500 horas de desarrollo acumuladas."
-                    satisfaction="100% de satisfacción en entregas puntuales."
-                  />
-                </div>
-
+              <div className='mt-4 sm:mt-0 sm:flex-col flex items-center'>
+                <div className='puntuacion text-8xl font-extrabold'>4.9</div>
+                <div className='ml-4 sm:ml-0 text-2xl flex justify-center'>★ ★ ★ ★ ★</div>
+              </div>
             </div>
+
+            <div className='p-4 sm:mx-8'>
+              <div className='flex justify-center mt-14 mb-12'>
+                <Reviews/>
+              </div>
+
+              <div className='mt-20 mb-10 text-xl italic text-white'>
+                <Trajectory 
+                  projects="+10 proyectos completados."
+                  hours="+500 horas de desarrollo acumuladas."
+                  satisfaction="100% de satisfacción en entregas puntuales."
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className='h-auto'>
         <div className='max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center'>
-            <div className='sm:w-[70%] mt-14 mb-14 p-4'>
-              <div className=''>
-                <div className='flex justify-center mb-8'>
-                    <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 my-4" />
-                </div>
-                <h2 className='text-2xl sm:text-4xl font-bold text-center text-stone-900 opacity-90'>¿Tienes un proyecto en mente?</h2>
-              </div>
-
-              <div className='mt-10 mb-5 flex justify-center ite'>
-                  <button className='p-3 shadow-[0_4px_10px_rgba(0,0,0,0.3)] rounded-sm flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
-                    <a className='font-semibold text-base flex items-center opacity-80'>
-                      CONTÁCTANOS
-                    </a>
-                  </button>
-                </div>
+          <div className='sm:w-[70%] h-[400px] flex flex-col justify-center'>
+            <div className='flex flex-col items-center'>
+              <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 mb-10" />
+              <h2 className='text-2xl sm:text-4xl font-bold text-center text-stone-900 opacity-90'>¿Tienes un proyecto en mente?</h2>
             </div>
+
+            <div className='mt-10 mb-5 flex justify-center ite'>
+              <button className='p-3 shadow-[0_4px_10px_rgba(0,0,0,0.3)] rounded-sm flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                <a className='font-semibold text-base flex items-center opacity-80'>
+                  CONTÁCTANOS
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 

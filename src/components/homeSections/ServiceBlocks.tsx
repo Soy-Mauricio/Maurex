@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick'; // Importa Slider desde react-slick
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -55,9 +56,9 @@ const ServiceBlocks: React.FC = () => {
                 <h1 className="font-bold text-2xl sm:mt-0 mt-6">{slide.title}</h1>
                 <p className="text-lg opacity-85 mt-2">{slide.description}</p>
                 <div className="mt-6 sm:mt-14 flex items-center sm:transition-all sm:duration-300 sm:ease-in-out sm:transform sm:translate-x-[-20px] sm:opacity-0 sm:group-hover:translate-x-0 sm:group-hover:opacity-100">
-                  <a className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px] transition-all duration-500" href="#">
+                  <Link to='/view-more' className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px] transition-all duration-500">
                     VER MÁS
-                  </a>
+                  </Link>
                   <img className="w-[22px]" src={slide.icons} alt="Siguiente" />
                 </div>
               </div>

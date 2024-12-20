@@ -45,6 +45,14 @@ const Technologies: React.FC = () => {
     return (
         <>
 
+            <div className='flex justify-center sm:w-[75%]'>
+              <div className=''>
+                <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 mb-10" />
+                <h2 className='text-3xl opacity-80 font-bold'>Tecnologías que utilizamos</h2>
+                <p className='mt-4 text-2xl opacity-80 sm:w-[85%]'>En Maurex utilizamos un stack tecnológico sólido y moderno para ofrecer soluciones de software robustas y escalables. Al combinar estas herramientas, garantizamos proyectos de alta calidad, optimizados para cumplir con tus necesidades y los estándares más exigentes del mercado.</p>
+              </div>
+            </div>
+
             <div className='flex justify-between gap-2 items-center mt-10 text-xl font-semibold'>
                 <span
                     onClick={() => toggleTechnologies(false)}
