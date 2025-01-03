@@ -1,5 +1,6 @@
 import React from 'react'
 import MainLayout from '../layouts/MainLayout'
+import Views from '../components/viewMoreSections/Views'
 
 const ViewMore: React.FC = () => {
   return (
@@ -15,9 +16,13 @@ const ViewMore: React.FC = () => {
             </div>
         </div>
       </section>
+
+      <section className='h-[auto]'>
+        <Views />
+      </section>
+
     </MainLayout>
   )
 }
 
 export default ViewMore
-
