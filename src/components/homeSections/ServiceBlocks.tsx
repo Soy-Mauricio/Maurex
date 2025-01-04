@@ -46,10 +46,10 @@ const ServiceBlocks: React.FC = () => {
   return (
     <Slider {...settings}>
       {slidesData.map((slide, index) => (
-        <div key={index} className='container group mb-10'>
+        <div key={index} className="container group mb-10">
           <div className="sm:flex items-center justify-around">
             <div className="sm:w-[50%] sm:h-[60vh] mt-5 sm:mt-0">
-              <img className='w-full h-full object-cover' src={slide.img} alt={slide.title}/>
+              <img className="w-full h-full object-cover" src={slide.img} alt={slide.title}/>
             </div>
             <div className="text-white flex items-start sm:w-[40%] h-auto">
               <div className="h-auto sm:p-0 p-4">
