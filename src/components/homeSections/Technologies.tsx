@@ -45,7 +45,15 @@ const Technologies: React.FC = () => {
     return (
         <>
 
-            <div className='flex justify-between gap-2 items-center mt-10 text-xl font-semibold'>
+            <div className="flex justify-center sm:w-[75%]">
+              <div className="">
+                <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 mb-10" />
+                <h2 className="text-3xl opacity-80 font-bold">Tecnologías que utilizamos</h2>
+                <p className="mt-4 text-2xl opacity-80 sm:w-[85%]">En Maurex utilizamos un stack tecnológico sólido y moderno para ofrecer soluciones de software robustas y escalables. Al combinar estas herramientas, garantizamos proyectos de alta calidad, optimizados para cumplir con tus necesidades y los estándares más exigentes del mercado.</p>
+              </div>
+            </div>
+
+            <div className="flex justify-between gap-2 items-center mt-10 text-xl font-semibold">
                 <span
                     onClick={() => toggleTechnologies(false)}
                     className={`w-[50%] cursor-pointer p-2 rounded-full text-center ${!showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[1px]'}`}
@@ -60,38 +68,38 @@ const Technologies: React.FC = () => {
                 </span>
             </div>
 
-            <div className='grid grid-cols-2 gap-10 mt-4 sm:h-[350px]'>
+            <div className="grid grid-cols-2 gap-10 mt-4 sm:h-[350px]">
                 {!showMobile ? (
 
                     <>
 
-                        <div className=''>
-                            <span className='font-bold text-lg'>
+                        <div className="">
+                            <span className="font-bold text-lg">
                                 Backend
                             </span>
-                            <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
+                            <div className="flex flex-wrap gap-6 w-[100%] mt-4">
                                 {backendTechnologies.map((tech, index) => (
-                                    <div className='flex flex-col items-center'>
-                                        <div key={index} className='p-3'>
-                                            <img src={tech.logo} alt="" className='w-20 h-20' />
+                                    <div className="flex flex-col items-center">
+                                        <div key={index} className="p-3">
+                                            <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
-                                        <span className='font-semibold mt-2'>{tech.name}</span>
+                                        <span className="font-semibold mt-2">{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
-                        <div className=''>
-                            <span className='font-bold text-lg'>
+                        <div className="">
+                            <span className="font-bold text-lg">
                                 Frontend
                             </span>
-                            <div className='flex flex-wrap gap-6 w-[100%] mt-4'>
+                            <div className="flex flex-wrap gap-6 w-[100%] mt-4">
                                 {frontendTechnologies.map((tech, index) => (
-                                    <div className='flex flex-col items-center'>
-                                        <div key={index} className='p-3'>
-                                            <img src={tech.logo} alt="" className='w-20 h-20' />
+                                    <div className="flex flex-col items-center">
+                                        <div key={index} className="p-3">
+                                            <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
-                                        <span className='font-semibold mt-2'>{tech.name}</span>
+                                        <span className="font-semibold mt-2">{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
@@ -102,29 +110,29 @@ const Technologies: React.FC = () => {
 
                     <>
 
-                        <div className=''>
-                            <span className='font-bold text-lg'>Android</span>
-                            <div className='flex flex-wrap gap-6 w-full mt-4'>
+                        <div className="">
+                            <span className="font-bold text-lg">Android</span>
+                            <div className="flex flex-wrap gap-6 w-full mt-4">
                                 {androidTechnologies.map((tech, index) => (
-                                    <div key={index} className='flex flex-col items-center'>
-                                        <div className='p-3'>
-                                            <img src={tech.logo} alt="" className='w-20 h-20'/>
+                                    <div key={index} className="flex flex-col items-center">
+                                        <div className="p-3">
+                                            <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
-                                        <span className='font-semibold mt-2'>{tech.name}</span>
+                                        <span className="font-semibold mt-2">{tech.name}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
-                        <div className=''>
-                            <span className='font-bold text-lg'>Multiplataforma</span>
-                            <div className='flex flex-wrap gap-6 w-full mt-4'>
+                        <div className="">
+                            <span className="font-bold text-lg">Multiplataforma</span>
+                            <div className="flex flex-wrap gap-6 w-full mt-4">
                                 {mobileTechnologies.map((tech, index) => (
-                                    <div key={index} className='flex flex-col items-center'>
-                                        <div className='p-3'>
-                                            <img src={tech.logo} alt="" className='w-20 h-20'/>
+                                    <div key={index} className="flex flex-col items-center">
+                                        <div className="p-3">
+                                            <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
-                                        <span className='font-semibold mt-2'>{tech.name}</span>
+                                        <span className="font-semibold mt-2">{tech.name}</span>
                                     </div>
                                 ))}
                             </div>

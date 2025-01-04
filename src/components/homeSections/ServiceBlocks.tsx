@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick'; // Importa Slider desde react-slick
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -45,19 +46,19 @@ const ServiceBlocks: React.FC = () => {
   return (
     <Slider {...settings}>
       {slidesData.map((slide, index) => (
-        <div key={index} className='container group mb-10'>
+        <div key={index} className="container group mb-10">
           <div className="sm:flex items-center justify-around">
             <div className="sm:w-[50%] sm:h-[60vh] mt-5 sm:mt-0">
-              <img className='w-full h-full object-cover' src={slide.img} alt={slide.title}/>
+              <img className="w-full h-full object-cover" src={slide.img} alt={slide.title}/>
             </div>
             <div className="text-white flex items-start sm:w-[40%] h-auto">
               <div className="h-auto sm:p-0 p-4">
                 <h1 className="font-bold text-2xl sm:mt-0 mt-6">{slide.title}</h1>
                 <p className="text-lg opacity-85 mt-2">{slide.description}</p>
                 <div className="mt-6 sm:mt-14 flex items-center sm:transition-all sm:duration-300 sm:ease-in-out sm:transform sm:translate-x-[-20px] sm:opacity-0 sm:group-hover:translate-x-0 sm:group-hover:opacity-100">
-                  <a className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px] transition-all duration-500" href="#">
+                  <Link to='/view-more' className="cursor-pointer border-b-[1px] border-transparent hover:border-white w-[70px] transition-all duration-500">
                     VER MÁS
-                  </a>
+                  </Link>
                   <img className="w-[22px]" src={slide.icons} alt="Siguiente" />
                 </div>
               </div>

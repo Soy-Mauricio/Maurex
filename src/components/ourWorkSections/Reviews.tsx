@@ -16,7 +16,7 @@ const reviewsData: Reviews[] = [
     {
         description: "Trabajar con Maurex fue una experiencia excepcional; su equipo entendió nuestras necesidades y aportó mejoras clave, logrando que Plastisol tenga una plataforma funcional que conecta mejor con nuestros clientes.",
         company: "Plastisol",
-        user: "Laura Gómez, CEO",
+        user: "Daniel Camargo, Admin",
         flag: "/assets/Img/Colombia.png",
         location: "Villavicencio, Colombia",
         punctuation: "5.0",
@@ -44,23 +44,32 @@ const Reviews: React.FC = () => {
         dots: true,
         infinite: true,
         speed: 3000,
-        slidesToShow: 2, // Cuántas cartas mostrar a la vez
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        centerMode: true, // Centrado
-        centerPadding: "50px", // Espaciado lateral
+        centerMode: true,
+        centerPadding: "50px",
+        responsive: [
+            {
+                breakpoint: 768, // Ancho de pantalla en el que se aplica la configuración
+                settings: {
+                    slidesToShow: 1, // Mostrar solo 1 carta en pantallas pequeñas
+                    centerPadding: "0px", // Elimina el padding lateral en pantallas pequeñas
+                },
+            },
+        ],
     };
 
     return (
         <>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto ">
                 <Slider {...settings}>
                     {reviewsData.map((review, index) => (
-                        <div key={index} className="px-4 mb-10"> {/* Margen entre cartas */}
-                            <div className="flex flex-col justify-center items-center bg-slate-50 p-10 rounded-lg shadow-md w-[80%] mx-auto h-[500px]">
-                                <p className="text-xl">"{review.description}"</p>
+                        <div key={index} className="px-4 mb-10">
+                            <div className="flex flex-col justify-center items-center bg-slate-50 p-5 sm:p-10 rounded-lg shadow-md sm:w-[80%] mx-auto sm:h-[500px] h-[550px]">
+                                <p className="sm:text-xl text-lg text-center sm:text-start">"{review.description}"</p>
                                 <div className="mt-10 text-center">
                                     <p className="font-semibold text-xl">{review.company}</p>
                                     <p className="text-black opacity-85 italic">{review.user}</p>
@@ -78,7 +87,6 @@ const Reviews: React.FC = () => {
                     ))}
                 </Slider>
             </div>
-
         </>
     );
 };
