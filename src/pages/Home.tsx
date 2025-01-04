@@ -157,7 +157,7 @@ const Home: React.FC = () => {
           </div>
       </section>
 
-      <section className='mt-14 text-white bg-colorAction-ACTION'>
+      <section className='mt-14 text-white color-sections'>
         <div className='max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center'>
           <div className='sm:w-[70%] mt-14 mb-14'>
             <div className=''>
@@ -165,12 +165,12 @@ const Home: React.FC = () => {
             </div>
 
             <div className='mt-10 flex justify-center ite'>
-                <button className='p-3 rounded-sm  flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
-                  <a className='font-semibold text-base flex items-center'>
-                    CONTÁCTANOS
-                  </a>
-                </button>
-              </div>
+              <button className='p-3 rounded-sm  flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform'>
+                <a className='font-semibold text-base flex items-center'>
+                  CONTÁCTANOS
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </section>
