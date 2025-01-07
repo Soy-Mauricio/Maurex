@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import OurWork from './pages/OurWork';
 import ViewMore from './pages/ViewMore';
 import ScrollToTop from './components/Scroll';
+import Web from './pages/Web';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/our-work" element={<OurWork />} />
         <Route path="/view-more" element={<ViewMore />} />
+        <Route path="/web-development" element={<Web />} />
       </Routes>
     </Router>
   );

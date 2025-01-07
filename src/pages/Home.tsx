@@ -64,19 +64,23 @@ const Home: React.FC = () => {
               description='Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea.'
               icon='assets/Icons/angulo-derecho.png'
               number={1}
+              link='/web-development'
             />
 
             <OurServices
               title='Aplicaciones Móviles'
               description='Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén.'
               icon='assets/Icons/angulo-derecho.png'
-              number={2}          />
+              number={2}
+              link=''
+            />
 
             <OurServices
               title='Software a Medida'
               description='Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos.'
               icon='assets/Icons/angulo-derecho.png'
               number={3}
+              link=''
             />
 
             <OurServices
@@ -84,6 +88,7 @@ const Home: React.FC = () => {
               description='Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa.'
               icon='assets/Icons/angulo-derecho.png'
               number={4}
+              link=''
             />
           </div>
 
