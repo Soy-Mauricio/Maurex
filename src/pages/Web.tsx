@@ -31,6 +31,12 @@ const Web: React.FC = () => {
                 </div>
             </section>
 
+            <section>
+                <div>
+                    
+                </div>
+            </section>
+
         </MainLayout>
 
     );
