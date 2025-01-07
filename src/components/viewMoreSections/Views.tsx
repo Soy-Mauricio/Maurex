@@ -63,7 +63,7 @@ const ImageTextSync: React.FC = () => {
 
         <div className="flex justify-center">
           <button
-            className="border-[1px] border-black p-5 rounded-full mb-20 hover:bg-black hover:-translate-y-2 transition-transform duration-500"
+            className="invertir-colores border-[1px] border-black p-5 rounded-full mb-20 hover:bg-black hover:-translate-y-2 transition-transform duration-500"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             <img className="w-[28px]" src="/public/assets/Icons/angulo-arriba.png" alt="" />
