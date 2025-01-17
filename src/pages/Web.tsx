@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import ServicesWeb from '../components/webSections/ServicesWeb';
 import Reviews from '../components/ourWorkSections/Reviews';
@@ -141,7 +142,7 @@ const Web: React.FC = () => {
         </section>
 
         <section className="auto">
-            <div className="h-[auto] p-4 max-w-[1200px] w-full mx-auto mt-20">
+            <div className="h-[auto] p-4 max-w-[1200px] w-full mx-auto mt-10">
                 <div className="sm:mx-8 flex flex-col justify-center">
                     <div className="flex justify-center">
                         <div className="w-[80%] flex flex-col">
@@ -154,16 +155,25 @@ const Web: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col">
-                        <div className="mt-[150px]">
-                            <h3 className="text-4xl font-semibold">Agencia de Vuelos</h3>
-                        </div>
-                        <div className="mt-10">
-                            <p className="text-2xl opacity-80">VueloYA es una innovadora aplicación diseñada para transformar la manera en que las personas buscan, reservan y gestionan sus vuelos. Con un enfoque en la simplicidad y la eficiencia, VueloYA se destaca en un mercado saturado por plataformas poco intuitivas, ofreciendo una experiencia de usuario clara y amigable.</p>
+                    <div className="flex justify-center items-center">
+                        <div className="flex flex-col w-[60%]">
+                            <div className="mt-[150px]">
+                                <h3 className="text-4xl font-semibold ">VueloYA</h3>
+                            </div>
+
+                            <div className="mt-10">
+                                <p className="text-2xl opacity-80">VueloYA es una innovadora aplicación diseñada para transformar la manera en que las personas buscan, reservan y gestionan sus vuelos. Con un enfoque en la simplicidad y la eficiencia, VueloYA se destaca en un mercado saturado por plataformas poco intuitivas, ofreciendo una experiencia de usuario clara y amigable.</p>
+                            </div>
+
+                            <button className="mt-6 bg-black text-white w-[160px]">
+                                <Link to='/view-more'
+                                className="text-lg flex justify-center p-2"> Más Información
+                                </Link>
+                            </button>
                         </div>
 
-                        <div className="flex justify-center mt-10">
-                            <img src="/public/assets/Img/WebVueloYA.webp" alt="" />
+                        <div className="flex justify-center mt-10 w-[40%]">
+                            <img className="h-[200px]" src="/public/assets/Img/WebVueloYA.webp" alt="" />
                         </div>
                     </div>
 
