@@ -34,7 +34,7 @@ const Web: React.FC = () => {
     <section className="h-auto my-20">
       <div className="p-4 max-w-[1200px] w-full mx-auto">
         <div className="flex justify-center">
-            <h2 className="icon-three text-center text-4xl opacity-80 font-bold w-[50%]">Servicios de desarrollo de aplicaciones web</h2>
+          <h2 className="icon-three text-center text-4xl opacity-80 font-bold w-[50%]">Servicios de desarrollo de aplicaciones web</h2>
         </div>
       </div>
 
