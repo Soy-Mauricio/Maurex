@@ -12,88 +12,85 @@ const Home: React.FC = () => {
 
     <MainLayout>
       
-      <section className="h-auto color-sections">
-        {/* Contenido de Bienvenida */}
-        <div className="text-white max-w-[1200px] w-full mx-auto h-auto flex justify-center items-center">
-            <div className="h-[650px] p-4 sm:mx-8 sm:w-[50%] mb-4 flex flex-col justify-center">
-              <div className="">
-                <h1 className="sm:text-5xl text-4xl font-bold mt-4">Tu aliado en el desarrollo de software</h1>
-                <p className="mt-4 text-2xl font-medium">En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.</p>
-              </div>
-
-              <div className="mt-10">
-                <button className="p-3 rounded-sm flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform">
-                  <a className="font-semibold text-base flex jus items-center">
-                    EMPEZAR AHORA
-                  </a>
-                  <img className="w-[26px] inline-block" src="assets/Icons/angulo-pequeno-derecha.png" alt="" /> 
-                </button>
-              </div>
-            </div>
-
-          <div className="w-[50%] sm:flex hidden">
-            <img className="object-cover" src="assets/Img/Developer.png" alt="" />
+    <section className="h-auto color-sections">
+      <div className="text-white max-w-[1200px] w-full mx-auto h-auto flex items-center">
+        <div className="sm:h-[650px] h-[850px] p-4 sm:mx-8 mb-4 flex flex-col items-center justify-center">
+          <div className="text-center sm:w-[80%]">
+            <h1 className="text-5xl font-bold mt-4 animation">
+              Tu aliado en el desarrollo de software
+            </h1>
+            <p className="mt-8 text-xl font-medium">
+              En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.
+            </p>
+          </div>
+          <div className="mt-20 flex justify-center">
+            <button className="color-btn p-3 rounded-lg flex items-center justify-center w-[200px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
+              <a className="font-semibold text-base flex items-center">
+                CONTÁCTANOS
+              </a>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className="h-auto mt-24">
-        {/* Contenido de Nuestros Servicios */}
-        <div className="max-w-[1200px] w-full mx-auto h-auto sm:flex sm:justify-center">
+    <section className="h-auto mt-24">
+      {/* Contenido de Nuestros Servicios */}
+      <div className="max-w-[1200px] w-full mx-auto h-auto sm:flex sm:justify-center">
 
-          <div className="h-auto p-4 sm:mx-8 sm:w-[50%]">
-              <div className="">
-                <hr className="border-t-4 border-black opacity-80 sm:w-[10%] w-[15%] mb-10"/>
-                <h2 className="text-4xl opacity-80 font-bold">Consigue ahora el mejor producto del mercado</h2>
-              </div>
-              <div className="mt-8">
-                <p className="text-2xl opacity-80">Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
-              </div>
-
-              <button className="mt-10">
-                <Link to='/our-work'
-                className="p-3 font-semibold text-base rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform"> CÓMO TRABAJAMOS
-                <img className="w-[25px] inline-block ml-2" src="assets/Icons/flecha-pequena-derecha.png" alt="" />
-                </Link>
-              </button>
+        <div className="h-auto p-4 sm:mx-8 sm:w-[50%]">
+          <div className="">
+            <hr className="border-t-4 border-black opacity-80 sm:w-[10%] w-[15%] mb-10"/>
+            <h2 className="text-4xl opacity-80 font-bold">Consigue ahora el mejor producto del mercado</h2>
+          </div>
+          <div className="mt-8">
+            <p className="text-2xl opacity-80">Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
           </div>
 
-          <div className="flex-col p-4 sm:mx-8 sm:w-[50%]">
-            <OurServices
-              title='Desarrollo Web'
-              description='Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea.'
-              icon='assets/Icons/angulo-derecho.png'
-              number={1}
-              link='/web-development'
-            />
-
-            <OurServices
-              title='Aplicaciones Móviles'
-              description='Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén.'
-              icon='assets/Icons/angulo-derecho.png'
-              number={2}
-              link=''
-            />
-
-            <OurServices
-              title='Software a Medida'
-              description='Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos.'
-              icon='assets/Icons/angulo-derecho.png'
-              number={3}
-              link=''
-            />
-
-            <OurServices
-              title='Consultoría Tecnológica'
-              description='Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa.'
-              icon='assets/Icons/angulo-derecho.png'
-              number={4}
-              link=''
-            />
-          </div>
-
+          <button className="mt-10">
+            <Link to='/our-work'
+            className="p-3 font-semibold text-base rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform"> CÓMO TRABAJAMOS
+            <img className="w-[25px] inline-block ml-2" src="assets/Icons/flecha-pequena-derecha.png" alt="" />
+            </Link>
+          </button>
         </div>
-      </section>
+
+        <div className="flex-col p-4 sm:mx-8 sm:w-[50%]">
+          <OurServices
+            title='Desarrollo Web'
+            description='Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea.'
+            icon='assets/Icons/angulo-derecho.png'
+            number={1}
+            link='/web-development'
+          />
+
+          <OurServices
+            title='Aplicaciones Móviles'
+            description='Diseñamos y desarrollamos apps móviles intuitivas y eficientes para conectar tu negocio con los clientes dondequiera que estén.'
+            icon='assets/Icons/angulo-derecho.png'
+            number={2}
+            link=''
+          />
+
+          <OurServices
+            title='Software a Medida'
+            description='Desarrollamos soluciones personalizadas que automatizan procesos, mejoran la eficiencia y reducen costos operativos.'
+            icon='assets/Icons/angulo-derecho.png'
+            number={3}
+            link=''
+          />
+
+          <OurServices
+            title='Consultoría Tecnológica'
+            description='Te guiamos en la adopción de las tecnologías más adecuadas para el crecimiento de tu empresa.'
+            icon='assets/Icons/angulo-derecho.png'
+            number={4}
+            link=''
+          />
+        </div>
+
+      </div>
+    </section>
 
       <section className="h-auto mt-14 color-sections-dos">
         {/* Contenido sobre nuestros proyectos */}
