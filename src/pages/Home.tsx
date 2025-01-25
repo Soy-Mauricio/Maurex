@@ -19,12 +19,12 @@ const Home: React.FC = () => {
             <h1 className="text-5xl font-bold mt-4 animation">
               Tu aliado en el desarrollo de software
             </h1>
-            <p className="mt-8 text-xl font-medium">
+            <p className="mt-8 text-2xl">
               En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.
             </p>
           </div>
           <div className="mt-20 flex justify-center">
-            <button className="color-btn p-3 rounded-lg flex items-center justify-center w-[200px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
+            <button className="color-btn p-3 flex items-center justify-center w-[180px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
               <a className="font-semibold text-base flex items-center">
                 CONTÁCTANOS
               </a>
@@ -39,17 +39,15 @@ const Home: React.FC = () => {
       <div className="max-w-[1200px] w-full mx-auto h-auto sm:flex sm:justify-center">
 
         <div className="h-auto p-4 sm:mx-8 sm:w-[50%]">
-          <div className="">
-            <hr className="border-t-4 border-black opacity-80 sm:w-[10%] w-[15%] mb-10"/>
-            <h2 className="text-4xl opacity-80 font-bold">Consigue ahora el mejor producto del mercado</h2>
-          </div>
+          <h1 className="icon text-4xl font-bold text-colorAction-TITTLE">Consigue ahora el mejor producto del mercado</h1>
+
           <div className="mt-8">
-            <p className="text-2xl opacity-80">Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
+            <p className="text-2xl opacity-75">Maurex se centra en el valor comercial y la confianza. Hemos proporcionado una variedad de aplicaciones de alta calidad a empresas de todos los tamaños, desde startups unipersonales hasta empresas como Pinterest, Asmodee, universidades y organizaciones sin fines de lucro.</p>
           </div>
 
           <button className="mt-10">
             <Link to='/our-work'
-            className="p-3 font-semibold text-base rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform"> CÓMO TRABAJAMOS
+            className="p-3 font-semibold text-base rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.3)] flex items-center justify-center w-[250px] bg-yellow-500 transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden"> CÓMO TRABAJAMOS
             <img className="w-[25px] inline-block ml-2" src="assets/Icons/flecha-pequena-derecha.png" alt="" />
             </Link>
           </button>
@@ -96,7 +94,7 @@ const Home: React.FC = () => {
         {/* Contenido sobre nuestros proyectos */}
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto">
           <div className="h-auto mt-14">
-            <h2 className="text-3xl mt-4 font-bold flex justify-center text-center text-white">Nuestros Proyectos</h2>
+            <h1 className="text-3xl mt-4 font-bold flex justify-center text-center text-white">Nuestros Proyectos</h1>
             <div className="flex justify-center items-center">
               <p className="text-center mt-4 sm:w-[75%] text-2xl text-white">En Maurex, cada proyecto es un reto y una oportunidad de innovar. Aquí te presentamos algunos de nuestros trabajos más destacados.</p>
             </div>
@@ -109,15 +107,12 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="h-auto mt-14">
+      <section className="h-auto mt-20">
         {/* Contenido Nosotros Maurex */}
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto">
           <div className="flex justify-center">
             <div className="sm:w-[75%]">
-              <div className="flex flex-col items-center">
-                <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 mb-10"/>
-                <h2 className="text-center text-3xl opacity-80 font-bold">Maurex</h2>
-              </div>
+              <h1 className="icon-three text-center text-3xl text-colorAction-TITTLE font-bold">Maurex</h1>
               <p className="mt-4 text-center text-2xl opacity-80">Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
             </div>
           </div>
@@ -126,17 +121,14 @@ const Home: React.FC = () => {
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto mt-10">
           <div className="flex justify-center">
             <div className="sm:w-[75%]">
-              <div className="flex flex-col items-center">
-                <hr className="border-t-4 sm:w-[6%] w-[15%] border-black opacity-80 mb-10"/>
-                <h2 className="text-center text-3xl opacity-80 font-bold">Nuestro Equipo</h2>
-              </div>
+              <h1 className="icon-three text-center text-3xl text-colorAction-TITTLE font-bold">Nuestro Equipo</h1>
               <p className="mt-4 text-center text-2xl opacity-80">En Maurex, somos un equipo ágil y altamente especializado. Nos enfocamos en ofrecer soluciones completas, combinando el poder del frontend y backend para crear productos robustos y escalables.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="h-auto mt-10">
+      <section className="h-auto mt-20 bg-custom-svg-tres bg-no-repeat bg-cover bg-center">
         {/* Contenido Nuestro Equipo */}
           <div className="flex justify-center">
             <div className="sm:flex sm:justify-around">
@@ -161,15 +153,15 @@ const Home: React.FC = () => {
           </div>
       </section>
 
-      <section className="mt-14 text-white color-sections">
+      <section className="text-white bg-colorAction-ACTION">
         <div className="max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center">
-          <div className="sm:w-[70%] mt-14 mb-14">
-            <div className="">
+          <div className="sm:w-[70%] mb-14">
+            <div className="mt-14">
               <h2 className="text-2xl sm:text-4xl font-bold text-center">La próxima revolución del mercado podría llevar tu sello. ¡Construyámosla juntos!</h2>
             </div>
 
-            <div className="mt-10 flex justify-center ite">
-              <button className="p-3 rounded-sm  flex items-center justify-center w-[200px] bg-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 will-change-transform">
+            <div className="mt-14 flex justify-center">
+              <button className="color-btn p-3 flex items-center justify-center w-[180px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
                 <a className="font-semibold text-base flex items-center">
                   CONTÁCTANOS
                 </a>
@@ -179,7 +171,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="h-[auto] mt-10">
+      <section className="h-[auto] my-20">
         {/* Contenido Nuestras Tecnologías*/}
         <div className="h-[auto] p-4 max-w-[1200px] w-full mx-auto">
           <div className="sm:mx-8">

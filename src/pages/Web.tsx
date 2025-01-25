@@ -18,10 +18,10 @@ const Web: React.FC = () => {
         <div className="sm:h-[650px] h-[850px] p-4 sm:mx-8 mb-4 flex flex-col items-center justify-center">
           <div className="text-center sm:w-[65%]">
             <h1 className="text-5xl font-bold mt-4">Nos especializamos en el desarrollo web para impulsar tus objetivos comerciales.</h1>
-            <p className="mt-8 text-xl font-medium">En Maurex, combinamos experiencia y tecnología para asegurar que su producto haga una diferencia en el mercado. Desde optimizar la experiencia del usuario y perfeccionar el diseño de productos, hasta implementar un desarrollo ágil y efectivo, nos aseguramos de que cada aspecto de su presencia digital esté alineado con sus objetivos comerciales.</p>
+            <p className="mt-8 text-2xl">En Maurex, combinamos experiencia y tecnología para asegurar que su producto haga una diferencia en el mercado. Desde optimizar la experiencia del usuario y perfeccionar el diseño de productos, hasta implementar un desarrollo ágil y efectivo, nos aseguramos de que cada aspecto de su presencia digital esté alineado con sus objetivos comerciales.</p>
           </div>
           <div className="mt-20 flex justify-center">
-            <button className="color-btn p-3 rounded-lg flex items-center justify-center w-[200px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
+            <button className="color-btn p-3 flex items-center justify-center w-[200px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
               <a className="font-semibold text-base flex items-center">
                 CONTÁCTANOS
               </a>
@@ -31,10 +31,10 @@ const Web: React.FC = () => {
       </div>
     </section>
 
-    <section className="h-auto my-20">
-      <div className="p-4 max-w-[1200px] w-full mx-auto">
+    <section className="h-auto bg-custom-svg-tres bg-no-repeat bg-cover bg-center mt-20">
+      <div className="p-4 max-w-[1200px] w-full mx-auto ">
         <div className="flex justify-center">
-          <h2 className="icon-three text-center text-4xl opacity-80 font-bold w-[50%]">Servicios de desarrollo de aplicaciones web</h2>
+          <h2 className="icon-three text-center text-4xl font-bold w-[50%] text-colorAction-TITTLE">Servicios de desarrollo de aplicaciones web</h2>
         </div>
       </div>
 
@@ -81,7 +81,7 @@ const Web: React.FC = () => {
         <div className="sm:mx-8 flex">
           <div className="flex justify-start w-[60%]">
             <div className="w-[90%]">
-              <h2 className="icon text-5xl opacity-80 font-bold">Desarrollo Web de Calidad</h2>
+              <h2 className="icon text-5xl font-bold text-colorAction-TITTLE">Desarrollo Web de Calidad</h2>
               <div className="mt-12 text-2xl opacity-80 ">
                 <p className="mb-4">En Maurex, abordamos el desarrollo web con un enfoque claro y eficiente. Te acompañamos en cada paso, desde la planificación hasta el lanzamiento. Analizamos tu proyecto, investigamos el mercado y te asesoramos sobre la tecnología adecuada, la arquitectura y las mejoras necesarias para mantener tu producto competitivo.
                 </p>
@@ -138,7 +138,7 @@ const Web: React.FC = () => {
         <div className="sm:mx-8 flex flex-col justify-center">
           <div className="flex justify-center">
             <div className="w-[70%] flex flex-col">
-              <h2 className="icon-three text-4xl font-bold text-center ">Una muestra de nuestro portafolio de desarrollo web</h2>
+              <h2 className="icon-three text-4xl font-bold text-center text-colorAction-TITTLE">Una muestra de nuestro portafolio de desarrollo web</h2>
               <div className="mt-10 text-2xl opacity-80">
                 <p className="mb-4 text-center text-lg font-semibold opacity-75">
                   Desde la conceptualización hasta el lanzamiento, seguimos un proceso ágil para asegurar que cada proyecto se complete a tiempo y dentro del presupuesto.
