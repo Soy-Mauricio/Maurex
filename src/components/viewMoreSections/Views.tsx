@@ -56,7 +56,7 @@ const ImageTextSync: React.FC = () => {
             key={section.id}
             className="text-section h-50 lg:h-screen flex flex-col items-start justify-center p-10"
           >
-            <h2 className="text-2xl font-bold mb-4">{section.tittle}</h2>
+            <h2 className="text-2xl font-bold mb-4 text-colorAction-TITTLE">{section.tittle}</h2>
             <p className="text-xl max-w-[500px]">{section.text}</p>
           </div>
         ))}

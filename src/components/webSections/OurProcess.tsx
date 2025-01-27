@@ -39,7 +39,7 @@ const OurProcess: React.FC = () => {
     <div className="flex flex-wrap justify-center w-full gap-5">
       {PocessData.map((process, index) => (
         <div key={index} className="flex justify-center items-center">
-          <div className="invertir-colores w-[200px] hover:bg-white hover:text-black flex flex-col justify-center cursor-pointer items-center p-4 rounded-lg h-[400px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.3)] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
+          <div className="invertir-colores w-[200px] hover:bg-white hover:text-black flex flex-col justify-center cursor-pointer items-center p-4 rounded-lg h-[350px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.3)] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
             <div className="h-[40%] flex flex-col items-center">
               <div className="mb-2 mt-5">
                 <img className="w-[50px]" src={process.icon} alt="Process" />
