@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <MainLayout>
       
     <section className="h-auto color-sections">
-      <div className="text-white max-w-[1200px] w-full mx-auto h-auto flex items-center">
-        <div className="sm:h-[650px] h-[850px] p-4 sm:mx-8 mb-4 flex flex-col items-center justify-center">
+      <div className="text-white max-w-[1200px] w-full mx-auto h-auto sm:flex sm:justify-centers">
+        <div className="sm:h-[650px] h-auto p-4 sm:mx-8 mx-4 mb-4 sm:flex sm:flex-col sm:items-center sm:justify-center">
           <div className="text-center sm:w-[80%]">
             <h1 className="text-5xl font-bold mt-4 animation">
               Tu aliado en el desarrollo de software
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
               En Maurex transformamos ideas en soluciones digitales innovadoras, creando productos tecnológicos de alta calidad para potenciar tu negocio. Ofrecemos desarrollo de aplicaciones personalizadas, optimización de procesos y servicios de consultoría para ayudarte a alcanzar tus objetivos.
             </p>
           </div>
-          <div className="mt-20 flex justify-center">
+          <div className="sm:mt-20 mt-10 flex justify-center">
             <button className="color-btn p-3 flex items-center justify-center w-[180px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
               <a className="font-semibold text-base flex items-center">
                 CONTÁCTANOS
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
       {/* Contenido de Nuestros Servicios */}
       <div className="max-w-[1200px] w-full mx-auto h-auto sm:flex sm:justify-center">
 
-        <div className="h-auto p-4 sm:mx-8 sm:w-[50%]">
+        <div className="h-auto p-4 sm:mx-8 mx-4 sm:w-[50%]">
           <h1 className="icon text-4xl font-bold text-colorAction-TITTLE">Consigue ahora el mejor producto del mercado</h1>
 
           <div className="mt-8">
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           </button>
         </div>
 
-        <div className="flex-col p-4 sm:mx-8 sm:w-[50%]">
+        <div className="flex-col p-4 sm:mx-8 mx-4 sm:w-[50%]">
           <OurServices
             title='Desarrollo Web'
             description='Creamos páginas web robustas y escalables que mejoran la experiencia del usuario y la presencia de tu negocio en línea.'
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
       <section className="h-auto mt-14 color-sections-dos">
         {/* Contenido sobre nuestros proyectos */}
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto">
-          <div className="h-auto mt-14">
+          <div className="h-auto mt-14 sm:mx-0 mx-4">
             <h1 className="text-3xl mt-4 font-bold flex justify-center text-center text-white">Nuestros Proyectos</h1>
             <div className="flex justify-center items-center">
               <p className="text-center mt-4 sm:w-[75%] text-2xl text-white">En Maurex, cada proyecto es un reto y una oportunidad de innovar. Aquí te presentamos algunos de nuestros trabajos más destacados.</p>
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Utilizamos el componente ServiceBlock con props */}
-          <div className="sm:flex-col mt-8 sm:mt-16 mb-16">
+          <div className="sm:flex-col mt-8 sm:mt-16 mb-16  sm:mx-0 mx-4">
             <ServiceBlocks/>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
       <section className="h-auto mt-20">
         {/* Contenido Nosotros Maurex */}
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto">
-          <div className="flex justify-center">
+          <div className="flex justify-center sm:mx-0 mx-4">
             <div className="sm:w-[75%]">
               <h1 className="icon-three text-center text-3xl text-colorAction-TITTLE font-bold">Maurex</h1>
               <p className="mt-4 text-center text-2xl opacity-80">Hemos construido Maurex con una misión clara: ofrecer soluciones tecnológicas personalizadas que transformen negocios y simplifiquen procesos. Nuestra pasión por la innovación y el desarrollo de software nos permite entregar productos que no solo cumplen, sino que superan las expectativas de nuestros clientes.</p>
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className="h-auto p-4 max-w-[1200px] w-full mx-auto mt-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center sm:mx-0 mx-4">
             <div className="sm:w-[75%]">
               <h1 className="icon-three text-center text-3xl text-colorAction-TITTLE font-bold">Nuestro Equipo</h1>
               <p className="mt-4 text-center text-2xl opacity-80">En Maurex, somos un equipo ágil y altamente especializado. Nos enfocamos en ofrecer soluciones completas, combinando el poder del frontend y backend para crear productos robustos y escalables.</p>
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
       <section className="h-auto mt-20 bg-custom-svg-tres bg-no-repeat bg-cover bg-center">
         {/* Contenido Nuestro Equipo */}
           <div className="flex justify-center">
-            <div className="sm:flex sm:justify-around">
+            <div className="sm:flex sm:justify-around sm:mx-0 mx-4">
               <Equipo 
                 img='assets/Img/Joker.jpg'
                 location='Colombia'
@@ -155,12 +155,12 @@ const Home: React.FC = () => {
 
       <section className="text-white bg-colorAction-ACTION">
         <div className="max-w-[1200px] w-full mx-auto h-[auto] p-4 flex justify-center items-center">
-          <div className="sm:w-[70%] mb-14">
-            <div className="mt-14">
+          <div className="sm:w-[70%] sm:mb-14 mb-0">
+            <div className="sm:mt-14">
               <h2 className="text-2xl sm:text-4xl font-bold text-center">La próxima revolución del mercado podría llevar tu sello. ¡Construyámosla juntos!</h2>
             </div>
 
-            <div className="mt-14 flex justify-center">
+            <div className="sm:mt-14 mt-10 flex justify-center">
               <button className="color-btn p-3 flex items-center justify-center w-[180px] transform transition-transform duration-700 hover:scale-105 will-change-transform backface-visibility-hidden">
                 <a className="font-semibold text-base flex items-center">
                   CONTÁCTANOS
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
       <section className="h-[auto] my-20">
         {/* Contenido Nuestras Tecnologías*/}
         <div className="h-[auto] p-4 max-w-[1200px] w-full mx-auto">
-          <div className="sm:mx-8">
+          <div className="sm:mx-8 mx-4">
             <Technologies/>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Web: React.FC = () => {
       {/* Contenido de Bienvenida */}
       <div className="text-white max-w-[1200px] w-full mx-auto h-[auto] flex items-center">
         <div className="sm:h-[650px] h-[850px] p-4 sm:mx-8 mb-4 flex flex-col items-center justify-center">
-          <div className="text-center sm:w-[65%]">
+          <div className="text-center sm:w-[80%]">
             <h1 className="text-5xl font-bold mt-4">Nos especializamos en el desarrollo web para impulsar tus objetivos comerciales.</h1>
             <p className="mt-8 text-2xl">En Maurex, combinamos experiencia y tecnología para asegurar que su producto haga una diferencia en el mercado. Desde optimizar la experiencia del usuario y perfeccionar el diseño de productos, hasta implementar un desarrollo ágil y efectivo, nos aseguramos de que cada aspecto de su presencia digital esté alineado con sus objetivos comerciales.</p>
           </div>
@@ -170,14 +170,14 @@ const Web: React.FC = () => {
             <div className="w-[80%]">
               <h2 className="icon-four text-4xl font-bold text-center">Nuestro Proceso</h2>
               <div className="mt-10 text-2xl opacity-80">
-                <p className="mb-4 text-center text-lg font-semibold">
+                <p className="text-center text-lg font-semibold">
                   Desde la idea inicial hasta el lanzamiento final, adoptamos un enfoque ágil que garantiza la entrega puntual y dentro del presupuesto, maximizando la eficiencia y adaptándonos a tus necesidades en cada etapa del proyecto..
                 </p>
               </div>
             </div>
           </div>
           
-          <div className="flex justify-center sm:h-[500px]">
+          <div className="flex justify-center sm:h-[475px]">
             <OurProcess />
           </div>
         </div>

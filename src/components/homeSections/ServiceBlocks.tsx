@@ -52,7 +52,7 @@ const ServiceBlocks: React.FC = () => {
               <img className="w-full h-full object-cover" src={slide.img} alt={slide.title}/>
             </div>
             <div className="text-white flex items-start sm:w-[40%] h-auto">
-              <div className="h-auto sm:p-0 p-4">
+              <div className="h-auto sm:p-0 p-2">
                 <h1 className="font-bold text-2xl sm:mt-0 mt-6">{slide.title}</h1>
                 <p className="text-lg opacity-85 mt-2">{slide.description}</p>
                 <div className="mt-6 sm:mt-14 flex items-center sm:transition-all sm:duration-300 sm:ease-in-out sm:transform sm:translate-x-[-20px] sm:opacity-0 sm:group-hover:translate-x-0 sm:group-hover:opacity-100">

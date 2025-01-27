@@ -53,13 +53,13 @@ const Technologies: React.FC = () => {
             <div className="flex justify-between gap-2 items-center mt-20 text-xl font-semibold">
                 <span
                     onClick={() => toggleTechnologies(false)}
-                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center text-colorAction-TITTLE ${!showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[3px]'}`}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center text-colorAction-TITTLE ${!showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[2px]'}`}
                 >
                     Web
                 </span>
                 <span
                     onClick={() => toggleTechnologies(true)}
-                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center text-colorAction-TITTLE ${showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[3px]'}`}
+                    className={`w-[50%] cursor-pointer p-2 rounded-full text-center text-colorAction-TITTLE ${showMobile ? 'bg-colorAction-ACTION text-white' : 'border-[2px]'}`}
                 >
                     Móviles
                 </span>
@@ -77,7 +77,7 @@ const Technologies: React.FC = () => {
                             <div className="flex flex-wrap gap-6 w-[100%] mt-4">
                                 {backendTechnologies.map((tech, index) => (
                                     <div className="flex flex-col items-center">
-                                        <div key={index} className="p-3">
+                                        <div key={index} className="p-2">
                                             <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
                                         <span className="font-semibold mt-2">{tech.name}</span>
@@ -93,7 +93,7 @@ const Technologies: React.FC = () => {
                             <div className="flex flex-wrap gap-6 w-[100%] mt-4">
                                 {frontendTechnologies.map((tech, index) => (
                                     <div className="flex flex-col items-center">
-                                        <div key={index} className="p-3">
+                                        <div key={index} className="p-2">
                                             <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
                                         <span className="font-semibold mt-2">{tech.name}</span>
@@ -112,7 +112,7 @@ const Technologies: React.FC = () => {
                             <div className="flex flex-wrap gap-6 w-full mt-4">
                                 {androidTechnologies.map((tech, index) => (
                                     <div key={index} className="flex flex-col items-center">
-                                        <div className="p-3">
+                                        <div className="p-2">
                                             <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
                                         <span className="font-semibold mt-2">{tech.name}</span>
@@ -122,11 +122,11 @@ const Technologies: React.FC = () => {
                         </div>
 
                         <div>
-                            <span className="font-bold text-lg">Multiplataforma</span>
+                            <span className="font-bold text-lg">Híbrido</span>
                             <div className="flex flex-wrap gap-6 w-full mt-4">
                                 {mobileTechnologies.map((tech, index) => (
                                     <div key={index} className="flex flex-col items-center">
-                                        <div className="p-3">
+                                        <div className="p-2">
                                             <img src={tech.logo} alt="" className="w-20 h-20"/>
                                         </div>
                                         <span className="font-semibold mt-2">{tech.name}</span>
